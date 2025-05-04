@@ -1,6 +1,8 @@
 ---
+layout: defaults/page
+permalink: index.html
+narrow: true
 title: Projects
-layout: page
 ---
 
 # Selected Projects
