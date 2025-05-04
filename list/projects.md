@@ -1,13 +1,14 @@
 ---
 layout: defaults/page
-permalink: index.html
+permalink: project.html
 narrow: true
 title: Projects
 ---
 
 # Selected Projects
 
-## Online House Rental Application  
+## Online House Rental Application
+
 **Jan 2025 – Apr 2025**  
 [Github](#) | [Demo Video](#)
 
@@ -19,7 +20,8 @@ title: Projects
 - Deployed backend services to Google Cloud. Integrated Geocoding Service for user searching.
 - Achieved 99.9% uptime with GCP deployment and health checks.
 
-## Twitch Search and Recommendation  
+## Twitch Search and Recommendation
+
 **Sep 2024 – Dec 2024**  
 [Github](#) | [Demo Video](#)
 
@@ -31,7 +33,8 @@ title: Projects
 - Applied Spring Boot Caching with Caffeine to enhance efficiency.
 - Containerized application deployed to AWS App Runner.
 
-## Web-Based Q&A AI Agent  
+## Web-Based Q&A AI Agent
+
 **Sep 2024 – Dec 2024**  
 [Github](#) | [Demo Video](#)
 
