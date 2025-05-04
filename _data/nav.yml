@@ -4,10 +4,8 @@
 - title: About
   href: about.html
 
-- title: Posts
-  href: list/posts.html
-
-- title: Documentation
+- title: Projects
   href: list/projects.html
 
-
+- title: Blogs
+  href: list/posts.html
