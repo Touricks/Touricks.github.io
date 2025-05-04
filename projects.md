@@ -1,8 +1,8 @@
 ---
 layout: defaults/page
-permalink: projects.html
-narrow: true
 title: Projects
+permalink: /projects.html
+narrow: true
 ---
 
 # Selected Projects

@@ -5,6 +5,10 @@ narrow: true
 title: About Me
 ---
 
+## About Me
+
+{% include components/intro.md %}
+
 ## Technical Skills
 
 **Programming Languages:** Java, Python (Pandas, NumPy, Scikit-learn, TensorFlow), SQL  
@@ -30,4 +34,3 @@ GPA: 87.64/100 (BJTU), 94.6/100 (Waterloo)
 ---
 
 Welcome to my personal website! For contact, please email: fmeng48@gatech.edu
-
