@@ -2,10 +2,10 @@
 layout: defaults/page
 permalink: index.html
 narrow: true
-title: Welcome to Fanshi's Web
+title: This is Fanshi Meng
 ---
 
-## What is it?
+## About Me
 
 {% include components/intro.md %}
 
