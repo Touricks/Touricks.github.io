@@ -59,10 +59,10 @@ defaults:
   - scope:
       path: "_projects"
     values:
-      show_profile: false
+      show_profile: true
       layout: defaults/project
   - scope:
       path: "list"
     values:
-      show_profile: false
+      show_profile: true
       layout: defaults/list
