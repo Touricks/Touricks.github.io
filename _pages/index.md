@@ -2,7 +2,7 @@
 layout: defaults/page
 permalink: index.html
 narrow: true
-title: Welcome to Friday Theme
+title: Welcome to Fanshi's Web
 ---
 
 ## What is it?
