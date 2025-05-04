@@ -1,10 +1,11 @@
-I am a graduate student at Georgia Tech, having graduated University of Waterloo. I excel in data analysis and full-stack development.
+I am a graduate student pursuing a Master’s degree in Computer Science and Engineering at Georgia Institute of Technology, with dual expertise in data science and full-stack development.
 
-In the data science field, I have completed two research projects focused on bioinformatics in past experience. My first project was as a data analyst, responsible for extracting raw data from experiments and predicting potential aptamers; and the second was as a data scientist, responsible for developing a DL model to predict the most likely mutation for specific proteins. In these roles, I specialized in both frontend and backend development, crafting comprehensive web applications that enhance user experience and operational efficiency.
+In the data science domain, I have led two bioinformatics research projects: as a data analyst, I extracted raw experimental data to engineer features and predict potential aptamers; as a data scientist, I developed a deep learning model to forecast likely protein mutations. In both roles, I was responsible for frontend and backend development of web applications, ensuring seamless visualization of results and streamlined workflows.
 
-In the full-stack development field, I have completed three projects, with details attached in my resume.
-My research interests lie in the field of human-computer interaction. During my time at Arizona State University, I was a member of the Birth Lab, where I engaged in cutting-edge research focused on designing, constructing, and evaluating magnetic robots for tissue resection within the human gastrointestinal tract.
+In full-stack development, I have delivered three end-to-end projects:
 
-Outside of my professional pursuits, I am passionate about Latin dance, an activity that allows me to express creativity and maintain physical fitness. I also enjoy skiing, which not only challenges me but also provides a thrilling way to experience the great outdoors.
+1. An online house rental platform built on Spring Boot microservices and PostgreSQL
+2. A Twitch video search and recommendation system using Spring Data JDBC with AWS RDS MySQL, and OpenFeign calls to the Twitch API
+3. A web-based Q&A AI agent platform combining Django backend and React frontend, integrated with OpenAI GPT-3.5 Turbo via LangChain
 
-It is maintained by Simon Freytag on [GitHub](https://github.com/sfreytag/friday-theme) and it was built originally for [Simon's own portfolio](http://www.freytag.org.uk).
+Outside of my professional pursuits, I am passionate about tennis and skiing. Tennis hones my agility, strategic thinking, and teamwork, while skiing challenges me to adapt quickly and maintain focus in dynamic environments.
