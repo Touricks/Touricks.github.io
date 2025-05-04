@@ -5,9 +5,7 @@ narrow: true
 title: About Me
 ---
 
-## About Me
 
-{% include components/intro.md %}
 
 ## Technical Skills
 
