@@ -15,24 +15,24 @@ tags: [算法, 学习笔记]
 
 # Binary Search
 
-{% include laioffer-alg/BinarySearch.md %}
+{% include laioffer-alg/binarysearch.md %}
 
 # Two-Pointer
 
-{% include laioffer-alg/TwoPointer.md %}
+{% include laioffer-alg/twopointer.md %}
 
 # Recursion
 
-{% include laioffer-alg/Recursion.md %}
+{% include laioffer-alg/recursion.md %}
 
 # DFS
 
-{% include laioffer-alg/DFS.md %}
+{% include laioffer-alg/dfs.md %}
 
 # BFS
 
-{% include laioffer-alg/BFS.md %}
+{% include laioffer-alg/bfs.md %}
 
 # DP
 
-{% include laioffer-alg/DP.md %}
+{% include laioffer-alg/dp.md %}
