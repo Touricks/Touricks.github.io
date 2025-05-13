@@ -1,12 +1,25 @@
-![[Pasted image 20250512175654.png]]
-- 对于任意index满足a[index] > a[len-1]的值，设isValid(index)=true,反之为false
-- 我们要找isValid=true的第一个值
-- 例如，对于[3,4,5,1,2], 在isValid处理后变为[true,true,true,false,-]
-- 我们想要的pivot是Last occurrance of True
+---
+title: Search In Shifted Sorted Array I
+---
 
-- if isValid(mid) = true => left = mid （mid是可能是答案）
-- if isValid(mid) = false => right = mid-1 (mid一定不是答案)
-- 由于是last occurrance，先判断right再判断left
+# Search In Shifted Sorted Array I
+
+旋转有序数组中的搜索问题，常用二分查找思想。
+
+## 相关题目
+
+- [Binary Search]({{ "/algorithms/binarysearch.html" | relative_url }})
+
+![[Pasted image 20250512175654.png]]
+
+- 对于任意 index 满足 a[index] > a[len-1]的值，设 isValid(index)=true,反之为 false
+- 我们要找 isValid=true 的第一个值
+- 例如，对于[3,4,5,1,2], 在 isValid 处理后变为[true,true,true,false,-]
+- 我们想要的 pivot 是 Last occurrance of True
+
+- if isValid(mid) = true => left = mid （mid 是可能是答案）
+- if isValid(mid) = false => right = mid-1 (mid 一定不是答案)
+- 由于是 last occurrance，先判断 right 再判断 left
 - 然后在两个区间中搜索
 
 ```java
@@ -46,8 +59,8 @@ public class Solution {
   }
   public int findPivot(int[] array){
     if (array.length == 1){
-      return 0; 
-    } 
+      return 0;
+    }
     int target = array[array.length-1];
     int left = 0;
     int right = array.length-2;

@@ -1,3 +1,7 @@
+---
+title: Binary Search
+---
+
 # 模板
 
 1. 找特定 target，找不到则结果不存在
@@ -48,7 +52,7 @@ int binarySearch(int[] a, int target){
 - right 和 left 的取值取决于
   - mid 能否是答案
   - 根据题目要求，在获知 mid 的信息后扩展答案的区间
-  - 相关题目：[Closest In Sorted Array]({% include laioffer-alg/closest-in-sorted-array.md %})
+  - 相关题目：[Closest In Sorted Array]({{ "/algorithms/closest-in-sorted-array.html" | relative_url }})
 - 必须 postprocessing：left 和 right 可能均不是答案，只是不断收缩的结果
 
   - 按照模板操作，left 一定小于等于 right
@@ -57,5 +61,5 @@ int binarySearch(int[] a, int target){
 - ==即使给定的解区间对应数组无序，甚至不是数组（e.g.字符串）,只要解区间有序，就可以用二分查找一个"最大值最小""最小值最大"类型的题目==
   - 解区间有序：对任意 i < len; 如果 a[i]是一个可行解，那么对任意 j>i（或 j<i）,a[j]都是可行解
   - 找满足条件的第一个值
-  - 相关题目 1：[Search In Bitonic Array]({% include laioffer-alg/search-in-bitonic-array.md %})
-  - 相关题目 2：[Search In Shifted Sorted Array I]({% include laioffer-alg/search-in-shifted-sorted-array-i.md %})
+  - 相关题目 1：[Search In Bitonic Array]({{ "/algorithms/search-in-bitonic-array.html" | relative_url }})
+  - 相关题目 2：[Search In Shifted Sorted Array I]({{ "/algorithms/search-in-shifted-sorted-array-i.html" | relative_url }})

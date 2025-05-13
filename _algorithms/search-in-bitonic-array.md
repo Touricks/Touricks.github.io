@@ -1,13 +1,25 @@
+---
+title: Search In Bitonic Array
+---
+
+# Search In Bitonic Array
+
+Bitonic 数组搜索问题，结合二分查找和分治思想。
+
+## 相关题目
+
+- [Binary Search]({{ "/algorithms/binarysearch.html" | relative_url }})
+
 ![[Pasted image 20250512152740.png]]
 
-- 首先，我们要找到最大的元素，才能以它为pivot向左向右找。如何找最大的元素？
-- 对于任意i满足a[i]<a[i-1] (i < len-1) , 我们称之为可行解，设为isValid(i)
-- 我们要找最大的元素，isValid的元素都不是最大的元素
+- 首先，我们要找到最大的元素，才能以它为 pivot 向左向右找。如何找最大的元素？
+- 对于任意 i 满足 a[i]<a[i-1] (i < len-1) , 我们称之为可行解，设为 isValid(i)
+- 我们要找最大的元素，isValid 的元素都不是最大的元素
 - if isValid(mid) = true => left = mid+1
-- if isValid(mid) = false  => right = mid
+- if isValid(mid) = false => right = mid
 
-- 此时left一定不小于right，因为小于的都被mid+1了
-- 检查left，然后从left向左向右搜target
+- 此时 left 一定不小于 right，因为小于的都被 mid+1 了
+- 检查 left，然后从 left 向左向右搜 target
 
 ```java
 public class Solution {

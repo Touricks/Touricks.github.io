@@ -18,7 +18,7 @@ avatar: /theme/img/portrait.JPG # Path to an avatar image
 baseurl: ""
 
 # Add a directory to hold misc pages, just to keep the root directory clean.
-include: ["_pages", "_portfolio", "_includes"]
+include: ["_pages", "_portfolio", "_includes", "_algorithms"]
 
 # Wire in the SASS files in the theme directory.
 sass:
@@ -38,6 +38,9 @@ collections:
   posts:
     output: true
     permalink: /:collection/:name.html
+  algorithms:
+    output: true
+    permalink: /algorithms/:name.html
 
 defaults:
   # Turn the profile sidebar on for all pages by default, except for the

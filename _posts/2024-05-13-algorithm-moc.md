@@ -6,6 +6,18 @@ categories: [算法]
 tags: [算法, 学习笔记]
 ---
 
+# 算法目录
+
+<ul>
+{% for algo in site.algorithms %}
+  <li><a href="{{ algo.url }}">{{ algo.title }}</a></li>
+{% endfor %}
+</ul>
+
+---
+
+> 本页自动收录 \_algorithms 目录下所有算法文档，无需手动维护！
+
 # 前言
 
 - 这里是算法部分的总目录，下属一级目录
