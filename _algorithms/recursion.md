@@ -1,17 +1,91 @@
 ---
 layout: post
 title: Recursion
+date: 2024-05-13
+categories: [算法]
+tags: [算法, 递归, 分治]
 ---
 
 # Recursion
 
-递归是一种通过函数自身调用自身来解决问题的方法，常用于分治、树形结构等问题。
+递归是一种重要的编程技巧，通过函数调用自身来解决问题。
 
-## 例题
+## 递归的基本要素
+
+1. 基本情况（Base Case）
+
+   - 递归的终止条件
+   - 不需要继续递归的情况
+
+2. 递归情况（Recursive Case）
+   - 将问题分解为更小的子问题
+   - 调用自身解决子问题
+
+## 递归的实现步骤
+
+1. 确定基本情况
+2. 确定递归情况
+3. 确定递归函数的参数和返回值
+4. 实现递归函数
+
+## 常见应用
+
+### 1. 阶乘计算
+
+```java
+public int factorial(int n) {
+    // Base case
+    if (n == 0 || n == 1) {
+        return 1;
+    }
+    // Recursive case
+    return n * factorial(n - 1);
+}
+```
+
+### 2. 斐波那契数列
+
+```java
+public int fibonacci(int n) {
+    // Base case
+    if (n <= 1) {
+        return n;
+    }
+    // Recursive case
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+```
+
+### 3. 二叉树遍历
+
+```java
+public void inorderTraversal(TreeNode root) {
+    // Base case
+    if (root == null) {
+        return;
+    }
+    // Recursive case
+    inorderTraversal(root.left);
+    System.out.println(root.val);
+    inorderTraversal(root.right);
+}
+```
+
+## 递归的优化
+
+1. 记忆化递归
+
+   - 使用数组或哈希表存储已计算的结果
+   - 避免重复计算
+
+2. 尾递归优化
+   - 递归调用是函数的最后一个操作
+   - 可以转换为迭代实现
+
+## 相关题目
 
 - [QuickSort LinkedList]({{ "/algorithms/quicksort-linkedlist.html" | relative_url }})
-- [Partition Linked List]({{ "/algorithms/partition-linkedlist.html" | relative_url }})
-- [Reorder Linked List]({{ "/algorithms/reorder-linkedlist.html" | relative_url }})
+- [DFS]({{ "/algorithms/dfs.html" | relative_url }})
 
 # 综述
 

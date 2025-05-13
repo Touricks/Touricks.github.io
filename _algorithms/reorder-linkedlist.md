@@ -1,54 +1,26 @@
 ---
 layout: post
 title: Reorder Linked List
+date: 2024-05-13
+categories: [算法]
+tags: [算法, 链表, 重排]
 ---
 
 # Reorder Linked List
 
 链表重排问题，常用于链表的变形操作。
 
-## 相关题目
+## 问题描述
 
-- [Partition Linked List]({{ "/algorithms/partition-linkedlist.html" | relative_url }})
+给定一个链表，将其重排为：L0 → Ln → L1 → Ln-1 → L2 → Ln-2 → ...
 
-![Reorder Linked List](/assets/images/Pasted image 20250512190808.png)
+## 解题思路
 
 - Step1：找中点，切断
 - Step2: Reverse 后半段
 - Step3：拼接两段 LinkedList
 
-- Function 能做什么
-
-```java
-public ListNode reorder(ListNode root);
-```
-
-给定一个 root,我能返回从 root 出发，按照题目要求变序后的 LinkedList 的 root
-
-- Step1：找中点：two-pointer
-  - slow++,fast+2, until fast reach the end.
-  - return slow
-- Step2: 切断，reverse 后半段
-  - root2 = slow.next
-  - slow.next = null
-  - reverse(root2)
-- Step3: 拼接两段 LinkedList
-
-- 注意，为了防止自环，最稳妥的方法还是先保存两条链的下一个节点
-
-```java
-while (l1 != null && l2 != null) {
-    ListNode n1 = l1.next, n2 = l2.next;
-    cur.next = l1;
-    cur = cur.next;
-    cur.next = l2;
-    cur = cur.next;
-    l1 = n1;
-    l2 = n2;
-}
-```
-
-Code
+## 代码实现
 
 ```java
 public class Solution {
@@ -68,7 +40,6 @@ public class Solution {
       cur.next = root2;
       root2 = root2.next;
       cur = cur.next;
-
     }
     while(root1 != null){
       cur.next = root1;
@@ -77,6 +48,7 @@ public class Solution {
     }
     return dummy.next;
   }
+
   public ListNode findMiddle(ListNode head){
     ListNode slow = head;
     ListNode fast = head;
@@ -86,6 +58,7 @@ public class Solution {
     }
     return slow;
   }
+
   public ListNode reverse(ListNode head){
     if (head == null || head.next == null){
       return head;
@@ -97,3 +70,10 @@ public class Solution {
   }
 }
 ```
+
+## 相关题目
+
+- [Partition Linked List]({{ "/algorithms/partition-linkedlist.html" | relative_url }})
+- [QuickSort LinkedList]({{ "/algorithms/quicksort-linkedlist.html" | relative_url }})
+
+![Reorder Linked List](/assets/images/Pasted image 20250512190808.png)

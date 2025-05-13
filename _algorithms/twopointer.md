@@ -1,22 +1,95 @@
 ---
 layout: post
-title: Two-Pointer
+title: Two Pointer
+date: 2024-05-13
+categories: [算法]
+tags: [算法, 双指针, 技巧]
 ---
 
-# Two-Pointer
+# Two Pointer
 
-Two-Pointer 是一种常用的算法技巧，通常用于数组或链表问题。它通过使用两个指针来遍历数据结构，从而优化时间复杂度。
+双指针技巧是一种常用的算法技巧，通过使用两个指针来解决问题。
 
-## 常见应用场景
+## 问题类型
 
-1. **对撞指针**：两个指针从两端向中间移动，常用于有序数组。
-2. **快慢指针**：两个指针以不同速度移动，常用于链表问题。
+1. 对撞指针
 
-## 例题
+   - 两个指针从数组两端向中间移动
+   - 适用于有序数组的查找问题
 
-- [Closest In Sorted Array]({{ "/algorithms/closest-in-sorted-array.html" | relative_url }})
-- [Search In Bitonic Array]({{ "/algorithms/search-in-bitonic-array.html" | relative_url }})
-- [Search In Shifted Sorted Array I]({{ "/algorithms/search-in-shifted-sorted-array-i.html" | relative_url }})
+2. 快慢指针
+
+   - 两个指针以不同速度移动
+   - 适用于链表中的环检测、中点查找等问题
+
+3. 滑动窗口
+   - 两个指针维护一个窗口
+   - 适用于子数组、子串等问题
+
+## 常见应用
+
+### 1. 对撞指针
+
+```java
+public int[] twoSum(int[] numbers, int target) {
+    int left = 0;
+    int right = numbers.length - 1;
+    while (left < right) {
+        int sum = numbers[left] + numbers[right];
+        if (sum == target) {
+            return new int[]{left + 1, right + 1};
+        } else if (sum < target) {
+            left++;
+        } else {
+            right--;
+        }
+    }
+    return new int[]{-1, -1};
+}
+```
+
+### 2. 快慢指针
+
+```java
+public boolean hasCycle(ListNode head) {
+    if (head == null || head.next == null) {
+        return false;
+    }
+    ListNode slow = head;
+    ListNode fast = head;
+    while (fast != null && fast.next != null) {
+        slow = slow.next;
+        fast = fast.next.next;
+        if (slow == fast) {
+            return true;
+        }
+    }
+    return false;
+}
+```
+
+### 3. 滑动窗口
+
+```java
+public int minSubArrayLen(int target, int[] nums) {
+    int left = 0;
+    int sum = 0;
+    int result = Integer.MAX_VALUE;
+    for (int right = 0; right < nums.length; right++) {
+        sum += nums[right];
+        while (sum >= target) {
+            result = Math.min(result, right - left + 1);
+            sum -= nums[left++];
+        }
+    }
+    return result == Integer.MAX_VALUE ? 0 : result;
+}
+```
+
+## 相关题目
+
+- [Reorder Linked List]({{ "/algorithms/reorder-linkedlist.html" | relative_url }})
+- [Partition Linked List]({{ "/algorithms/partition-linkedlist.html" | relative_url }})
 
 # 综述
 

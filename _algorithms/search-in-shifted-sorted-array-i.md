@@ -1,17 +1,20 @@
 ---
 layout: post
 title: Search In Shifted Sorted Array I
+date: 2024-05-13
+categories: [算法]
+tags: [算法, 二分查找, 数组]
 ---
 
 # Search In Shifted Sorted Array I
 
 旋转有序数组中的搜索问题，常用二分查找思想。
 
-## 相关题目
+## 问题描述
 
-- [Binary Search]({{ "/algorithms/binarysearch.html" | relative_url }})
+在一个旋转有序数组中查找目标值。旋转有序数组是指将有序数组在某个位置旋转后得到的数组。
 
-![Search In Shifted Sorted Array I](/assets/images/Pasted image 20250512175654.png)
+## 解题思路
 
 - 对于任意 index 满足 a[index] > a[len-1]的值，设 isValid(index)=true,反之为 false
 - 我们要找 isValid=true 的第一个值
@@ -22,6 +25,8 @@ title: Search In Shifted Sorted Array I
 - if isValid(mid) = false => right = mid-1 (mid 一定不是答案)
 - 由于是 last occurrance，先判断 right 再判断 left
 - 然后在两个区间中搜索
+
+## 代码实现
 
 ```java
 public class Solution {
@@ -83,3 +88,11 @@ public class Solution {
   }
 }
 ```
+
+## 相关题目
+
+- [Binary Search]({{ "/algorithms/binarysearch.html" | relative_url }})
+- [Closest In Sorted Array]({{ "/algorithms/closest-in-sorted-array.html" | relative_url }})
+- [Search In Bitonic Array]({{ "/algorithms/search-in-bitonic-array.html" | relative_url }})
+
+![Search In Shifted Sorted Array I](/assets/images/Pasted image 20250512175654.png)

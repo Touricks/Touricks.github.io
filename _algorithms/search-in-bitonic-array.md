@@ -1,26 +1,28 @@
 ---
 layout: post
 title: Search In Bitonic Array
+date: 2024-05-13
+categories: [算法]
+tags: [算法, 二分查找, 数组]
 ---
 
 # Search In Bitonic Array
 
 Bitonic 数组搜索问题，结合二分查找和分治思想。
 
-## 相关题目
+## 问题描述
 
-- [Binary Search]({{ "/algorithms/binarysearch.html" | relative_url }})
+在一个 Bitonic 数组（先递增后递减）中查找目标值。
 
-![Search In Bitonic Array](/assets/images/Pasted image 20250512152740.png)
+## 解题思路
 
-- 首先，我们要找到最大的元素，才能以它为 pivot 向左向右找。如何找最大的元素？
+- 首先，我们要找到最大的元素，才能以它为 pivot 向左向右找
 - 对于任意 i 满足 a[i]<a[i-1] (i < len-1) , 我们称之为可行解，设为 isValid(i)
 - 我们要找最大的元素，isValid 的元素都不是最大的元素
 - if isValid(mid) = true => left = mid+1
 - if isValid(mid) = false => right = mid
 
-- 此时 left 一定不小于 right，因为小于的都被 mid+1 了
-- 检查 left，然后从 left 向左向右搜 target
+## 代码实现
 
 ```java
 public class Solution {
@@ -79,3 +81,11 @@ public class Solution {
   }
 }
 ```
+
+## 相关题目
+
+- [Binary Search]({{ "/algorithms/binarysearch.html" | relative_url }})
+- [Closest In Sorted Array]({{ "/algorithms/closest-in-sorted-array.html" | relative_url }})
+- [Search In Shifted Sorted Array I]({{ "/algorithms/search-in-shifted-sorted-array-i.html" | relative_url }})
+
+![Search In Bitonic Array](/assets/images/Pasted image 20250512152740.png)

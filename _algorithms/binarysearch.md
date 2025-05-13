@@ -1,66 +1,96 @@
 ---
 layout: post
 title: Binary Search
+date: 2024-05-13
+categories: [算法]
+tags: [算法, 二分查找, 数据结构]
 ---
 
-# 模板
+# Binary Search
 
-1. 找特定 target，找不到则结果不存在
+二分查找是一种高效的搜索算法，常用于在有序数组中查找目标值。
+
+## 基本模板
 
 ```java
-int binarySearch(int[] a, int target){
-	int left = 0;
-	int right = a.length - 1;
-	while (left <= right){
-		//int mid = (left+right)/2;
-		int mid = left + (right - left) / 2;
-		if (target == a[mid]){
-			return mid;
-		}
-		else if (target<a[mid]){
-			right = mid-1;
-		}
-		else{
-			left = mid+1;
-		}
-	}
+public int binarySearch(int[] array, int target) {
+    if (array == null || array.length == 0) {
+        return -1;
+    }
+    int left = 0;
+    int right = array.length - 1;
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+        if (array[mid] == target) {
+            return mid;
+        } else if (array[mid] < target) {
+            left = mid + 1;
+        } else {
+            right = mid - 1;
+        }
+    }
+    return -1;
 }
 ```
 
-2. 找符合特定条件的最优结果（假设找 smallest Larger than target）
+## 变体
+
+### 1. 找第一个等于目标值的位置
 
 ```java
-int binarySearch(int[] a, int target){
-	int mid;
-	int left = 0;
-	int right = a.length-1;
-	while(left < right-1){
-		mid = left + (right-left)/2;
-		if (isValid(mid)){ // 这里是a[mid] > target
-			right = mid; // mid是潜在答案
-		}else{
-			left = mid+1; // mid不是答案，直接排除
-		}
-	}
+public int firstOccurrence(int[] array, int target) {
+    if (array == null || array.length == 0) {
+        return -1;
+    }
+    int left = 0;
+    int right = array.length - 1;
+    while (left < right - 1) {
+        int mid = left + (right - left) / 2;
+        if (array[mid] >= target) {
+            right = mid;
+        } else {
+            left = mid;
+        }
+    }
+    if (array[left] == target) {
+        return left;
+    }
+    if (array[right] == target) {
+        return right;
+    }
+    return -1;
 }
 ```
 
-# 例题
+### 2. 找最后一个等于目标值的位置
 
-注意：
+```java
+public int lastOccurrence(int[] array, int target) {
+    if (array == null || array.length == 0) {
+        return -1;
+    }
+    int left = 0;
+    int right = array.length - 1;
+    while (left < right - 1) {
+        int mid = left + (right - left) / 2;
+        if (array[mid] <= target) {
+            left = mid;
+        } else {
+            right = mid;
+        }
+    }
+    if (array[right] == target) {
+        return right;
+    }
+    if (array[left] == target) {
+        return left;
+    }
+    return -1;
+}
+```
 
-- null 和 length=0 特别处理
-- right 和 left 的取值取决于
-  - mid 能否是答案
-  - 根据题目要求，在获知 mid 的信息后扩展答案的区间
-  - 相关题目：[Closest In Sorted Array]({{ "/algorithms/closest-in-sorted-array.html" | relative_url }})
-- 必须 postprocessing：left 和 right 可能均不是答案，只是不断收缩的结果
+## 相关题目
 
-  - 按照模板操作，left 一定小于等于 right
-  - 如果问 first occur，先看 left； 问 last occur，先看 right
-
-- ==即使给定的解区间对应数组无序，甚至不是数组（e.g.字符串）,只要解区间有序，就可以用二分查找一个"最大值最小""最小值最大"类型的题目==
-  - 解区间有序：对任意 i < len; 如果 a[i]是一个可行解，那么对任意 j>i（或 j<i）,a[j]都是可行解
-  - 找满足条件的第一个值
-  - 相关题目 1：[Search In Bitonic Array]({{ "/algorithms/search-in-bitonic-array.html" | relative_url }})
-  - 相关题目 2：[Search In Shifted Sorted Array I]({{ "/algorithms/search-in-shifted-sorted-array-i.html" | relative_url }})
+- [Closest In Sorted Array]({{ "/algorithms/closest-in-sorted-array.html" | relative_url }})
+- [Search In Bitonic Array]({{ "/algorithms/search-in-bitonic-array.html" | relative_url }})
+- [Search In Shifted Sorted Array I]({{ "/algorithms/search-in-shifted-sorted-array-i.html" | relative_url }})
