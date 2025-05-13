@@ -1,3 +1,9 @@
+---
+layout: default
+title: Partition Linked List
+narrow: true
+---
+
 ![pasted-image-20250513113624.png](./pasted-image-20250513113624.png)
 
 - Step1: 设置两个 dummy node

@@ -1,3 +1,9 @@
+---
+layout: default
+title: Reorder Linked List
+narrow: true
+---
+
 ![pasted-image-20250512190808.png](./pasted-image-20250512190808.png)
 
 - Step1：找中点，切断

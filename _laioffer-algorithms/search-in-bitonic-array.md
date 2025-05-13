@@ -1,3 +1,9 @@
+---
+layout: default
+title: Search In Bitonic Array
+narrow: true
+---
+
 ![pasted-image-20250512152740.png](./pasted-image-20250512152740.png)
 
 - 首先，我们要找到最大的元素，才能以它为 pivot 向左向右找。如何找最大的元素？

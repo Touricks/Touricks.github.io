@@ -1,3 +1,9 @@
+---
+layout: default
+title: Quicksort Linked List
+narrow: true
+---
+
 <img src="./pasted-image-20250513130055.png" alt="pasted-image-20250513130055.png" style="width: 50%;">
 
 - ListNode quickSort(ListNode head)
