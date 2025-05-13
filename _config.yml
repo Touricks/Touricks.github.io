@@ -7,20 +7,20 @@ highlighter: rouge
 excerpt_separator: <!--more-->
 
 # Config for your profile.
-title: This is Fanshi Meng # Site title
-name: Fanshi Meng # Your name
-avatar: /theme/img/portrait.JPG # Path to an avatar image
+title: This is Fanshi Meng # Site title
+name: Fanshi Meng # Your name
+avatar: /theme/img/portrait.JPG # Path to an avatar image
 
 # The theme uses the baseurl throughout, which is useful for running the entire
-# site under a subdir, like for this GitHub Pages deployment as a project site.
-# Use "" when runnign the site out of the root of a domain.
+# site under a subdir, like for this GitHub Pages deployment as a project site.
+# Use "" when runnign the site out of the root of a domain.
 # baseurl: "/friday-theme"
 baseurl: ""
 
 # Add a directory to hold misc pages, just to keep the root directory clean.
 include: ["_pages", "_portfolio"]
 
-# Wire in the SASS files in the theme directory.
+# Wire in the SASS files in the theme directory.
 sass:
   sass_dir: theme/_sass
   style: compressed
@@ -35,19 +35,27 @@ collections:
     output: true
     title: portfolio
     permalink: /:collection/:name.html
+  posts:
+    output: true
+    permalink: /:collection/:name.html
 
 defaults:
   # Turn the profile sidebar on for all pages by default, except for the
   # collections, where it is off and replaced by useful things on the sidebar.
-  # To override this one a page, use
+  # To override this one a page, use
   #    show_profile: false
-  # to hide the profile.
+  # to hide the profile.
   - scope:
       path: ""
     values:
       show_profile: true
   - scope:
       path: "_posts"
+    values:
+      show_profile: false
+      layout: defaults/post
+  - scope:
+      path: "_posts/**/*"
     values:
       show_profile: false
       layout: defaults/post
