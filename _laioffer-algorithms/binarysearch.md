@@ -44,21 +44,26 @@ int binarySearch(int[] a, int target){
 		}
 	}
 }
-# 例题
-注意：
-- null和length=0 特别处理
-- right和left的取值取决于
-	- mid能否是答案
-	- 根据题目要求，在获知mid的信息后扩展答案的区间
-	- 相关题目：[Clostest In sorted array](/algorithmn-notes/clostest-in-sorted-array/)
+```
 
-- 必须postprocessing：left和right可能均不是答案，只是不断收缩的结果
-	- 按照模板操作，left一定小于等于right
-	- 如果问first occur，先看left； 问last occur，先看right
+# 例题
+
+注意：
+
+- null 和 length=0 特别处理
+- right 和 left 的取值取决于
+
+  - mid 能否是答案
+  - 根据题目要求，在获知 mid 的信息后扩展答案的区间
+  - 相关题目：[Clostest In sorted array](/algorithmn-notes/clostest-in-sorted-array.html)
+
+- 必须 postprocessing：left 和 right 可能均不是答案，只是不断收缩的结果
+
+  - 按照模板操作，left 一定小于等于 right
+  - 如果问 first occur，先看 left； 问 last occur，先看 right
 
 - ==即使给定的解区间对应数组无序，甚至不是数组（e.g.字符串）,只要解区间有序，就可以用二分查找一个"最大值最小""最小值最大"类型的题目==
-	- 解区间有序：对任意i < len; 如果a[i]是一个可行解，那么对任意j>i（或j<i）,a[j]都是可行解
-	- 找满足条件的第一个值
-	- 相关题目1：[Search In Bitonic Array](/algorithmn-notes/search-in-bitonic-array/)
-	- 相关题目2：[Search In Shifted Sorted Array I](/algorithmn-notes/search-in-shifted-sorted-array-i/)
-```
+  - 解区间有序：对任意 i < len; 如果 a[i]是一个可行解，那么对任意 j>i（或 j<i）,a[j]都是可行解
+  - 找满足条件的第一个值
+  - 相关题目 1：[Search In Bitonic Array](/algorithmn-notes/search-in-bitonic-array.html)
+  - 相关题目 2：[Search In Shifted Sorted Array I](/algorithmn-notes/search-in-shifted-sorted-array-i.html)
