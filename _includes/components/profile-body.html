@@ -1,13 +1,17 @@
 <p class="card-text">
-  {% for link_item in site.data.profile %} {% if link_item.caption == "LinkedIn"
-  %} Plain LinkedIn Link:
-  <a href="{{ link_item.href }}">{{ link_item.caption }} (Plain Link Test)</a>
-  <br />
-  Original Theme LinkedIn Link:
-  <a href="{{link_item.href}}" class="d-flex align-items-center mb-1">
-    <span class="icon grey mr-2"> {% include {{link_item.icon}} %} </span>
-    <span class="text-nowrap">{{link_item.caption}}</span>
+  {% for link in site.data.profile %} {% if link.caption == "LinkedIn" %} {#
+  Test LinkedIn without icon span #}
+  <a href="{{link.href}}" class="d-flex align-items-center mb-1">
+    <span class="text-nowrap">{{link.caption}} (No Icon Test)</span>
+  </a>
+  {% elsif link.caption == "Email" %} {# Test Email without icon span #}
+  <a href="{{link.href}}" class="d-flex align-items-center mb-1">
+    <span class="text-nowrap">{{link.caption}} (No Icon Test)</span>
+  </a>
+  {% else %} {# Other links normally #}
+  <a href="{{link.href}}" class="d-flex align-items-center mb-1">
+    <span class="icon grey mr-2"> {% include {{link.icon}} %} </span>
+    <span class="text-nowrap">{{link.caption}}</span>
   </a>
   {% endif %} {% endfor %}
-  <!-- You can add other links here for testing if needed -->
 </p>
