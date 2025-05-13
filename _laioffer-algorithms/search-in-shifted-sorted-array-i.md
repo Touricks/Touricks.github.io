@@ -1,4 +1,4 @@
-![Pasted image 20250512175654.png](./Pasted image 20250512175654.png)
+![pasted-image-20250512175654.png](./pasted-image-20250512175654.png)
 
 - 对于任意 index 满足 a[index] > a[len-1]的值，设 isValid(index)=true,反之为 false
 - 我们要找 isValid=true 的第一个值

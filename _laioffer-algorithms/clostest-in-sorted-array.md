@@ -1,4 +1,4 @@
-![Pasted image 20250512145838.png](./Pasted image 20250512145838.png)
+![pasted-image-20250512145838.png](./pasted-image-20250512145838.png)
 
 Processing
 

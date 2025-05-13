@@ -1,4 +1,4 @@
-![Pasted image 20250513113624.png](./Pasted image 20250513113624.png)
+![pasted-image-20250513113624.png](./pasted-image-20250513113624.png)
 
 - Step1: 设置两个 dummy node
 - Step2：将大于和小于 target 的节点接到两个 dummy node 上
