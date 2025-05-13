@@ -6,16 +6,6 @@ categories: [算法]
 tags: [算法, 学习笔记]
 ---
 
-# 算法目录
-
-<ul>
-{% for algo in site.algorithms %}
-  <li><a href="{{ algo.url }}">{{ algo.title }}</a></li>
-{% endfor %}
-</ul>
-
----
-
 > 本页自动收录 \_algorithms 目录下所有算法文档，无需手动维护！
 
 # 前言
@@ -25,26 +15,20 @@ tags: [算法, 学习笔记]
 - 二级目录：算法使用的数据结构（注意，一些算法只有线性结构，或未收录，则省略该级目录）
 - 三级目录：使用对应数据结构和算法的例题
 
-# Binary Search
+目前收录以下算法：
+Binary Search
+Two-Pointer
+Recursion
+DFS
+BFS
+DP
 
-{% include laioffer-alg/binarysearch.md %}
+# 算法目录
 
-# Two-Pointer
+<ul>
+{% for algo in site.algorithms %}
+  <li><a href="{{ algo.url }}">{{ algo.title }}</a></li>
+{% endfor %}
+</ul>
 
-{% include laioffer-alg/twopointer.md %}
-
-# Recursion
-
-{% include laioffer-alg/recursion.md %}
-
-# DFS
-
-{% include laioffer-alg/dfs.md %}
-
-# BFS
-
-{% include laioffer-alg/bfs.md %}
-
-# DP
-
-{% include laioffer-alg/dp.md %}
+---
