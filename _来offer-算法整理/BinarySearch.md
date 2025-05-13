@@ -1,3 +1,9 @@
+---
+layout: default
+title: Binary Search
+narrow: true # 保持与MOC文章一致的侧边栏宽度
+---
+
 # 模板
 
 1. 找特定 target，找不到则结果不存在
