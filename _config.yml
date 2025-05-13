@@ -60,4 +60,4 @@ defaults:
 collections:
   来offer-算法整理:
     output: true
-    permalink: /algorithmn-notes/:name # Using :name for filename-based slug
+    permalink: /algorithmn-notes/:name.html # Using :name for filename-based slug with .html
