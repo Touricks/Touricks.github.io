@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Search In Shifted Sorted Array I
 ---
 
@@ -10,7 +11,7 @@ title: Search In Shifted Sorted Array I
 
 - [Binary Search]({{ "/algorithms/binarysearch.html" | relative_url }})
 
-![[Pasted image 20250512175654.png]]
+![Search In Shifted Sorted Array I](/assets/images/Pasted image 20250512175654.png)
 
 - 对于任意 index 满足 a[index] > a[len-1]的值，设 isValid(index)=true,反之为 false
 - 我们要找 isValid=true 的第一个值
@@ -81,5 +82,4 @@ public class Solution {
     }
   }
 }
-
 ```

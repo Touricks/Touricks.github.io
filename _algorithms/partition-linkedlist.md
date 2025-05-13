@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Partition Linked List
 ---
 
@@ -11,7 +12,7 @@ title: Partition Linked List
 - [QuickSort LinkedList]({{ "/algorithms/quicksort-linkedlist.html" | relative_url }})
 - [Reorder Linked List]({{ "/algorithms/reorder-linkedlist.html" | relative_url }})
 
-![[Pasted image 20250513113624.png|400]]
+![Partition Linked List](/assets/images/Pasted image 20250513113624.png)
 
 - Step1: 设置两个 dummy node
 - Step2：将大于和小于 target 的节点接到两个 dummy node 上

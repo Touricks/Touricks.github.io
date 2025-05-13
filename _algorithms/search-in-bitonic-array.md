@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Search In Bitonic Array
 ---
 
@@ -10,7 +11,7 @@ Bitonic 数组搜索问题，结合二分查找和分治思想。
 
 - [Binary Search]({{ "/algorithms/binarysearch.html" | relative_url }})
 
-![[Pasted image 20250512152740.png]]
+![Search In Bitonic Array](/assets/images/Pasted image 20250512152740.png)
 
 - 首先，我们要找到最大的元素，才能以它为 pivot 向左向右找。如何找最大的元素？
 - 对于任意 i 满足 a[i]<a[i-1] (i < len-1) , 我们称之为可行解，设为 isValid(i)
@@ -77,5 +78,4 @@ public class Solution {
     return -1;
   }
 }
-
 ```

@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "算法学习笔记"
-date: 2024-05-13
+date: 2025-05-13
 categories: [算法]
 tags: [算法, 学习笔记]
 ---
 
 > 本页自动收录 \_algorithms 目录下所有算法文档，无需手动维护！
 
-# 前言
+## 前言
 
 - 这里是算法部分的总目录，下属一级目录
 - 一级目录：算法
@@ -23,10 +23,11 @@ DFS
 BFS
 DP
 
-# 算法目录
+## 算法目录
 
 <ul>
-{% for algo in site.algorithms %}
+{% assign algorithms = site.algorithms | where_exp: "algo", "algo.path contains 'binarysearch' or algo.path contains 'twopointer' or algo.path contains 'recursion' or algo.path contains 'dfs' or algo.path contains 'bfs' or algo.path contains 'dp'" %}
+{% for algo in algorithms %}
   <li><a href="{{ algo.url }}">{{ algo.title }}</a></li>
 {% endfor %}
 </ul>

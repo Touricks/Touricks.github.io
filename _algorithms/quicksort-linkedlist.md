@@ -1,4 +1,5 @@
 ---
+layout: post
 title: QuickSort LinkedList
 ---
 
@@ -10,7 +11,7 @@ title: QuickSort LinkedList
 
 - [Partition Linked List]({{ "/algorithms/partition-linkedlist.html" | relative_url }})
 
-![[Pasted image 20250513130055.png|350]]
+![QuickSort LinkedList](/assets/images/Pasted image 20250513130055.png)
 
 - ListNode quickSort(ListNode head)
   给定一个 head，返回一个新 head，使得链表升序排列

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Reorder Linked List
 ---
 
@@ -10,7 +11,7 @@ title: Reorder Linked List
 
 - [Partition Linked List]({{ "/algorithms/partition-linkedlist.html" | relative_url }})
 
-![[Pasted image 20250512190808.png]]
+![Reorder Linked List](/assets/images/Pasted image 20250512190808.png)
 
 - Step1：找中点，切断
 - Step2: Reverse 后半段
@@ -95,5 +96,4 @@ public class Solution {
     return newhead;
   }
 }
-
 ```
