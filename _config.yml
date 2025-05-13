@@ -17,30 +17,10 @@ avatar: /theme/img/portrait.JPG # Path to an avatar image
 # baseurl: "/friday-theme"
 baseurl: ""
 
-# Add a directory to hold misc pages, just to keep the root directory clean.
-include: ["_pages", "_portfolio", "_includes", "_algorithms"]
-
 # Wire in the SASS files in the theme directory.
 sass:
   sass_dir: theme/_sass
   style: compressed
-
-# Turn the projects into a collection.
-collections:
-  projects:
-    output: true
-    title: Projects
-    permalink: /:collection/:name.html
-  portfolio:
-    output: true
-    title: portfolio
-    permalink: /:collection/:name.html
-  posts:
-    output: true
-    permalink: /:collection/:name.html
-  algorithms:
-    output: true
-    permalink: /algorithms/:name.html
 
 defaults:
   # Turn the profile sidebar on for all pages by default, except for the
@@ -55,12 +35,7 @@ defaults:
   - scope:
       path: "_posts"
     values:
-      show_profile: false
-      layout: defaults/post
-  - scope:
-      path: "_posts/**/*"
-    values:
-      show_profile: false
+      show_profile: true
       layout: defaults/post
   - scope:
       path: "_portfolio"
@@ -77,3 +52,9 @@ defaults:
     values:
       show_profile: true
       layout: defaults/list
+
+# Collections
+collections:
+  来offer-算法整理:
+    output: true
+    permalink: /algorithmn-notes/:name # Using :name for filename-based slug
