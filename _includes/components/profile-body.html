@@ -1,17 +1,8 @@
 <p class="card-text">
-  {% for link in site.data.profile %} {% if link.caption == "LinkedIn" %} {#
-  Test LinkedIn without icon span #}
-  <a href="{{link.href}}" class="d-flex align-items-center mb-1">
-    <span class="text-nowrap">{{link.caption}} (No Icon Test)</span>
-  </a>
-  {% elsif link.caption == "Email" %} {# Test Email without icon span #}
-  <a href="{{link.href}}" class="d-flex align-items-center mb-1">
-    <span class="text-nowrap">{{link.caption}} (No Icon Test)</span>
-  </a>
-  {% else %} {# Other links normally #}
+  {% for link in site.data.profile %}
   <a href="{{link.href}}" class="d-flex align-items-center mb-1">
     <span class="icon grey mr-2"> {% include {{link.icon}} %} </span>
     <span class="text-nowrap">{{link.caption}}</span>
   </a>
-  {% endif %} {% endfor %}
+  {% endfor %}
 </p>
