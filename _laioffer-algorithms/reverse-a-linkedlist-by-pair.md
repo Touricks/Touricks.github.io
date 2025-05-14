@@ -1,7 +1,5 @@
 ---
 layout: default
-title: Reverse a Linked List by Pair
+title: Reverse a LinkedList by Pair
 narrow: true
 ---
-
-_This page is a placeholder._

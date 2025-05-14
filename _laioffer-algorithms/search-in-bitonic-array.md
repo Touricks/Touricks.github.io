@@ -4,7 +4,15 @@ title: Search In Bitonic Array
 narrow: true
 ---
 
-![pasted-image-20250512152740.png](./pasted-image-20250512152740.png)
+Search for a target number in a bitonic array, return the index of the target number if found in the array, or return -1.
+A bitonic array is a combination of two sequence: the first sequence is a monotonically increasing one and the second sequence is a monotonically decreasing one.
+Assumptions:
+
+- The array is not null.
+  Examples:
+  array = {1, 4, 7, 11, 6, 2, -3, -8}, target = 2, return 5.
+
+---
 
 - 首先，我们要找到最大的元素，才能以它为 pivot 向左向右找。如何找最大的元素？
 - 对于任意 i 满足 a[i]<a[i-1] (i < len-1) , 我们称之为可行解，设为 isValid(i)

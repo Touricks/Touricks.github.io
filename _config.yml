@@ -61,3 +61,6 @@ collections:
   laioffer-algorithms:
     output: true
     permalink: /algorithmn-notes/:name.html # Using :name for filename-based slug with .html
+  cursor-docs:
+    output: true
+    permalink: /cursor-docs/:name.html

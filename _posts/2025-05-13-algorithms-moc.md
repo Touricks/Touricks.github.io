@@ -9,35 +9,8 @@ layout: defaults/post # 明确指定
 narrow: true
 ---
 
-# 前言
+# 算法学习笔记
 
-- 这里是算法部分的总目录，下属一级目录
-- 一级目录：算法
-- 二级目录：算法使用的数据结构（注意，一些算法只有线性结构，或未收录，则省略该级目录）
-- 三级目录：使用对应数据结构和算法的例题
+点击下方链接进入算法笔记总目录：
 
-## Binary Search
-
-[BinarySearch](/algorithmn-notes/binarysearch.html)
-
-## TwoPointer
-
-[TwoPointer](/algorithmn-notes/twopointer.html)
-
-## Recursion
-
-[Recursion](/algorithmn-notes/recursion.html)
-
-## DFS
-
-[DFS](/algorithmn-notes/dfs.html)
-
-## BFS
-
-[BFS](/algorithmn-notes/bfs.html)
-_注意: BFS.md 文件当前缺失。_
-
-## DP
-
-[DP](/algorithmn-notes/dp.html)
-_注意: DP.md 文件当前缺失。_
+[算法笔记总目录](/algorithmn-notes/moc-algorithms-overview.html)

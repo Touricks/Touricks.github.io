@@ -27,12 +27,12 @@ narrow: true
 - Dummy Head
   - 辅助头，节点本身没有实际意义，但是几乎所有 linkedlist 题目都需要，以降低编码复杂度
 - 例题
-  - [Reorder Linked List](/algorithmn-notes/reorder-linked-list/)
+  - [Reorder Linked List](/algorithmn-notes/reorder-linked-list.html)
     - 易错点：在对两条链表交叉合并时，一定要 **先把下一个节点保存好**，再去修改指针，最后再推进 `cur`。警惕连续的 cur.next 赋值操作将 cur 原先对应的节点信息抹除
-  - [Partition Linked List](/algorithmn-notes/partition-linked-list/)
+  - [Partition Linked List](/algorithmn-notes/partition-linked-list.html)
     - 易错点：在对多条链表进行拼接时，警惕最后一段链表尾部的节点一定要添加额外设置:next = null. 如果把原来节点的 `next` 指针都保留了下来，会导致在把两条链拼接回去的时候形成了环
-  - [QuickSort LinkedList](/algorithmn-notes/quicksort-linkedlist/)
+  - [QuickSort LinkedList](/algorithmn-notes/quicksort-linkedlist.html)
 - Recursion vs Traversal
 - 例题：
-  - [Reverse Linked List](/algorithmn-notes/reverse-linked-list/) (_注意: 源文件 Reverse Linked List.md 可能缺失_)
-  - [Reverse a linkedlist by pair](/algorithmn-notes/reverse-a-linkedlist-by-pair/) (_注意: 源文件 Reverse a linkedlist by pair.md 可能缺失_)
+  - [Reverse Linked List](/algorithmn-notes/reverse-linked-list.html)
+  - [Reverse a linkedlist by pair](/algorithmn-notes/reverse-a-linkedlist-by-pair.html)

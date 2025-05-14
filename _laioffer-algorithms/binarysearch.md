@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Binary Search
-narrow: true # 保持与MOC文章一致的侧边栏宽度
+narrow: true
 ---
 
 # 模板
@@ -52,11 +52,9 @@ int binarySearch(int[] a, int target){
 
 - null 和 length=0 特别处理
 - right 和 left 的取值取决于
-
   - mid 能否是答案
   - 根据题目要求，在获知 mid 的信息后扩展答案的区间
   - 相关题目：[Clostest In sorted array](/algorithmn-notes/clostest-in-sorted-array.html)
-
 - 必须 postprocessing：left 和 right 可能均不是答案，只是不断收缩的结果
 
   - 按照模板操作，left 一定小于等于 right

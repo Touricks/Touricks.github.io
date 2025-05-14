@@ -4,7 +4,13 @@ title: Partition Linked List
 narrow: true
 ---
 
-![pasted-image-20250513113624.png](./pasted-image-20250513113624.png)
+Given a linked list and a target value T, partition it such that all nodes less than T are listed before the nodes larger than or equal to target value T. The original relative order of the nodes in each of the two partitions should be preserved.
+
+**Examples**
+
+- L = 2 -> 4 -> 3 -> 5 -> 1 -> null, T = 3, is partitioned to 2 -> 1 -> 4 -> 3 -> 5 -> null
+
+---
 
 - Step1: 设置两个 dummy node
 - Step2：将大于和小于 target 的节点接到两个 dummy node 上
