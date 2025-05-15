@@ -37,7 +37,9 @@ narrow: true
 
 - Recursion vs Traversal
 - 例题：
+
   - [Reverse Linked List](/algorithmn-notes/reverse-linked-list.html)
+
   - [Reverse a linkedlist by pair](/algorithmn-notes/reverse-a-linkedlist-by-pair.html)
 
 # Array
@@ -47,11 +49,13 @@ narrow: true
 - 本质上还是快排，对于 color 较少的情况，可以做到 TC O(N) SC O(1) 解决
 - 将快排的 pivot 换为`color[mid]`，然后在划分数组的同时划分`color[mid]`
 - 优化方法（二路划分->三路划分）可以将很多元素相等导致的快排退化情况规避掉
+
   [Rainbow Sort](/algorithmn-notes/rainbow-sort.html)
 
 # Stack
 
 - Sorted Array with Three Stack (要求 TC O(NlogN) )
+
   [SortedWithStacks](/algorithmn-notes/sortedwithstacks.html)
 
 # Tree
@@ -64,15 +68,21 @@ narrow: true
 
 - 例题
   [IsSymmertricTree](/algorithmn-notes/issymmertrictree.html)
+
   [TweakedIdenticalTrees](/algorithmn-notes/tweakedidenticaltrees.html)
 
 - 板子题，感觉如今 AI 发达的年代已经概率不大了
 - BST 节点的 Insert 和 Delete
+
   [BSTInsert](/algorithmn-notes/bstinsert.html)
+
   [BSTdelete](/algorithmn-notes/bstdelete.html)
 
 - BinaryTree 的遍历(非递归写法)
+
   [Preorder(Iter)](/algorithmn-notes/preorder-iter.html)
+
 - 牢记 cornercase 的处理 - null
 - 在 iterative 中更容易忘
+
   [Inorder(Iter)](/algorithmn-notes/inorder-iter.html)

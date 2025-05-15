@@ -1,3 +1,9 @@
+---
+layout: default
+title: DP
+narrow: true
+---
+
 ## 前缀和
 
 106. Largest SubMatrix Sum

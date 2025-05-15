@@ -1,3 +1,9 @@
+---
+layout: default
+title: IsSymmertricTree
+narrow: true
+---
+
 Check if a given binary tree is symmetric.
 
 **Examples**

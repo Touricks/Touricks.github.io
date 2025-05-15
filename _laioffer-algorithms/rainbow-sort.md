@@ -1,3 +1,9 @@
+---
+layout: default
+title: Rainbow Sort
+narrow: true
+---
+
 Given an array of balls with k different colors denoted by numbers 1- k, sort the balls.
 
 **Examples**

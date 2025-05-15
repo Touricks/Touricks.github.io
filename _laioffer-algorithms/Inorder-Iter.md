@@ -1,3 +1,9 @@
+---
+layout: default
+title: Inorder(Iter)
+narrow: true
+---
+
 Implement an iterative, in-order traversal of a given binary tree, return the list of keys of each node in the tree as it is in-order traversed.
 
 **Examples**
