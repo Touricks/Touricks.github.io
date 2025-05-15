@@ -7,6 +7,4 @@ layout: defaults/post # 明确指定
 narrow: true
 ---
 
-## 算法学习笔记
-
 [算法笔记总目录](/algorithmn-notes/moc-algorithms-overview.html)

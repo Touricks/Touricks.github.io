@@ -1,10 +1,10 @@
 ---
 layout: default
-title: DFS (Depth First Search)
+title: DFS
 narrow: true
 ---
 
-# 综述
+## 综述
 
 - DFS 核心特征：问题的解不需要合并，探索到树底部即可获得答案（的一部分）
 - DFS 题目的 Comment 需要包含：

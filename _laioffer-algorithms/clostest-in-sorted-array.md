@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Closest In Sorted Array
+title: Clostest In sorted array
 narrow: true
 ---
 

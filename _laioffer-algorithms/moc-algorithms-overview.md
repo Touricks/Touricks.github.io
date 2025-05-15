@@ -36,4 +36,3 @@ _注意: BFS.md 文件当前缺失。_
 # DP
 
 [DP](/algorithmn-notes/dp.html)
-_注意: DP.md 文件当前缺失。_

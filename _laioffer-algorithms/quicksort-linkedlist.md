@@ -1,6 +1,6 @@
 ---
 layout: default
-title: QuickSort Linked List
+title: QuickSort LinkedList
 narrow: true
 ---
 

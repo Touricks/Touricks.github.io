@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Reverse a LinkedList by Pair
+title: Reverse a linkedlist by pair
 narrow: true
 ---
 
