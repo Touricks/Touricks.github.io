@@ -1,3 +1,8 @@
+---
+layout: default
+title: Search In Bitonic Array
+narrow: true
+---
 Search for a target number in a bitonic array, return the index of the target number if found in the array, or return -1.
 A bitonic array is a combination of two sequence: the first sequence is a monotonically increasing one and the second sequence is a monotonically decreasing one.
 Assumptions:
