@@ -1,3 +1,10 @@
+---
+layout: default
+title: DP
+narrow: true
+"aliases:": DP_alg
+---
+
 ## 综述
 
 ### DP 问题定义和分类

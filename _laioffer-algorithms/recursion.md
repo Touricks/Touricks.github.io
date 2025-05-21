@@ -1,3 +1,10 @@
+---
+layout: default
+title: Recursion
+narrow: true
+"aliases:": Recursion_alg
+---
+
 # 综述
 
 四个问题：

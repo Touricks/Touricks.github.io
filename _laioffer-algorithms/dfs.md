@@ -1,3 +1,10 @@
+---
+layout: default
+title: DFS
+narrow: true
+"aliases:": DFS_alg
+---
+
 ## 综述
 
 - DFS 核心特征：

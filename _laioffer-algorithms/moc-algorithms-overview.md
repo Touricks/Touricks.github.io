@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Algorithm MOC (来自updated_mov)
+title: Algorithm MOC
 narrow: true
 "aliases:": MOC_alg
 ---
@@ -34,4 +34,4 @@ narrow: true
 
 # DP
 
-[DP](/algorithmn-notes/dp.html)
+[DP](/algorithmn-notes/DP.html)

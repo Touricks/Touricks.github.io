@@ -1,3 +1,10 @@
+---
+layout: default
+title: BFS
+narrow: true
+"aliases:": BFS_alg
+---
+
 ## 综述
 
 定义：从根节点开始，沿着图的宽度遍历图的节点，所有节点被不重复的访问一次
