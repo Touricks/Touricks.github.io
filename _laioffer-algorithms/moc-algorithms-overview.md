@@ -30,8 +30,7 @@ narrow: true
 
 # BFS
 
-[BFS](/algorithmn-notes/bfs.html)
-_注意: BFS.md 文件当前缺失。_
+[BFS](/algorithmn-notes/BFS.html)
 
 # DP
 
