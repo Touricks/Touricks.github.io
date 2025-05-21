@@ -2,7 +2,6 @@
 layout: default
 title: DFS
 narrow: true
-"aliases:": DFS_alg
 ---
 
 ## 综述
@@ -70,20 +69,20 @@ narrow: true
 
 ### Permutation 类问题（解集元素个数固定）
 
-- [Parentheses Problem1](/algorithmn-notes/parenthesesproblem1.html)
+- [Parentheses Problem1](/algorithmn-notes/parentheses-problem1.html)
   - 括号序列问题 1，只能用每层决定一个位置才能得到最优解
-- [All Permutations1](/algorithmn-notes/allpermutations1.html)
+- [All Permutations1](/algorithmn-notes/all-permutations1.html)
   - 字符串全排列-要求每个字符必须出现
-- [Parentheses Problem2](/algorithmn-notes/parenthesesproblem2.html)
+- [Parentheses Problem2](/algorithmn-notes/parentheses-problem2.html)
   - 括号序列问题，三种括号但没有优先级，对右括号的放置有限制
-- [Parentheses Problem3](/algorithmn-notes/parenthesesproblem3.html)
+- [Parentheses Problem3](/algorithmn-notes/parentheses-problem3.html)
   - 括号序列问题，三种括号有优先级，对左括号的放置也有限制了
   - 和 Problem2 的差别只有左括号放置时的条件有所改变，一行差别
-- [All Permutations2](/algorithmn-notes/allpermutations2.html)
+- [All Permutations2](/algorithmn-notes/all-permutations2.html)
   - 字符串全排列-允许字符重复
-- [All Permutations3](/algorithmn-notes/allpermutations3.html)
+- [All Permutations3](/algorithmn-notes/all-permutations3.html)
   - 字符串大小为 k 的全排列-允许字符重复
-- [N Queen](/algorithmn-notes/nqueen.html)
+- [N Queen](/algorithmn-notes/n-queen.html)
   - 经典 N Queens 问题
 
 ### Combination 类问题（解集元素个数不定）
@@ -93,15 +92,15 @@ narrow: true
   - Combination 问题,字符串的任意子集
 - [Combination-Sum](/algorithmn-notes/combination-sum.html)
   - Combination 问题，完全背包，物品数量不限，问是否能正好装满，但要输出方案
-- [Combination Of Coins](/algorithmn-notes/combinationofcoins.html) （99Cents）
+- [Combination Of Coins](/algorithmn-notes/combination-of-coins.html) （99Cents）
   - Combination 问题：完全背包
-- [All Subset2](/algorithmn-notes/allsubset2.html)
+- [All Subset2](/algorithmn-notes/all-subset2.html)
   - 找字符串的所有长度为 k 的子集
   - 虽然结果长度固定，但是先后顺序在答案里不构成区分，决定这题是一个 combination 问题
-- [All Subset3](/algorithmn-notes/allsubset3.html)
+- [All Subset3](/algorithmn-notes/all-subset3.html)
   - 找字符串的所有子集，包含重复元素
   - 需要先给字符串排序，才能开始烤肉
-- [All Subset4](/algorithmn-notes/allsubset4.html)
+- [All Subset4](/algorithmn-notes/all-subset4.html)
   - 找字符串的所有长度为 k 的子集，包含重复元素
 - [FactorCombination](/algorithmn-notes/factorcombination.html)
   - 因数模拟，target 的修改从加减变成整除
@@ -110,7 +109,7 @@ narrow: true
 
 ### 树上路径问题
 
-![TreePathProblems](/algorithmn-notes/treepathproblems.html)
+![树上路径问题](/algorithmn-notes/tree-path-problems.html)
 
 ### LCA
 
@@ -211,6 +210,6 @@ TreeNode LCA(root, one, two): 给我一个root和两个要找的点，我返回L
 
 #### 例题：
 
-[Lowest Common Ancestor VI](/algorithmn-notes/lowestcommonancestorvi.html)
+[Lowest Common Ancestor VI](/algorithmn-notes/lowest-common-ancestor-vi.html)
 
 ## Graph

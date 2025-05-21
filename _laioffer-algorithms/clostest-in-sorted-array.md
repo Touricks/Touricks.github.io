@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Clostest In sorted array
+title: Clostest in Sorted array
 narrow: true
 ---
 

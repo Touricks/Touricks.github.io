@@ -2,7 +2,6 @@
 layout: default
 title: Recursion
 narrow: true
-"aliases:": Recursion_alg
 ---
 
 # 综述
@@ -33,19 +32,19 @@ narrow: true
   - 任何节点的"前驱"都存在（除非链表空了），不必在代码里写 `if (head == node) ...`。
   - 插入／删除操作可以统一写成："找到前驱 `prev`，然后 `prev.next = newNode; newNode.next = curr;`"，不用再考虑 `prev` 为 `null` 的分支。
 - 例题
-  - [Reorder Linked List](/algorithmn-notes/reorderlinkedlist.html)
+  - [Reorder Linked List](/algorithmn-notes/reorder-linked-list.html)
     - 易错点：在对两条链表交叉合并时，一定要 **先把下一个节点保存好**，再去修改指针，最后再推进 `cur`。警惕连续的 cur.next 赋值操作将 cur 原先对应的节点信息抹除
-  - [Partition Linked List](/algorithmn-notes/partitionlinkedlist.html)
+  - [Partition Linked List](/algorithmn-notes/partition-linked-list.html)
     - 易错点：在对多条链表进行拼接时，警惕最后一段链表尾部的节点一定要添加额外设置:next = null. 如果把原来节点的 `next` 指针都保留了下来，会导致在把两条链拼接回去的时候形成了环
-  - [QuickSort LinkedList](/algorithmn-notes/quicksortlinkedlist.html)
+  - [QuickSort LinkedList](/algorithmn-notes/quicksort-linkedlist.html)
     - 将快速排序的两个区间划分成两个 LinkedList，然后以两个 LinkedList 作为参数调用自己
 
 ## Linkedlist traversal 写法
 
 - Iterative 写法
 - 例题：
-  - [Reverse Linked List](/algorithmn-notes/reverselinkedlist.html)
-  - [Reverse a linkedlist by pair](/algorithmn-notes/reversealinkedlistbypair.html)
+  - [Reverse Linked List](/algorithmn-notes/reverse-linked-list.html)
+  - [Reverse a linkedlist by pair](/algorithmn-notes/reverse-a-linkedlist-by-pair.html)
 
 ## 遍历时对"前一个"，"后一个"节点的控制方法
 
@@ -84,7 +83,7 @@ while (curr != null && curr.next != null && curr.next.next != null) {
 - 本质上还是快排，对于 color 较少的情况，可以做到 TC O(N) SC O(1) 解决
 - 将快排的 pivot 换为`color[mid]`，然后在划分数组的同时划分`color[mid]`
 - 优化方法（二路划分->三路划分）可以将很多元素相等导致的快排退化情况规避掉
-  [Rainbow Sort](/algorithmn-notes/rainbowsort.html)
+  [Rainbow Sort](/algorithmn-notes/rainbow-sort.html)
 
 # Stack
 
@@ -113,5 +112,5 @@ while (curr != null && curr.next != null && curr.next.next != null) {
 - 牢记 cornercase 的处理 - null
 - 在 inorder 和 postorder 中，我们需要保存当前访问的节点将其压入栈中
 - 由于"当前访问的节点"不是"当前需要的节点"，我们只能将其压入栈中，而不能直接 pop()
-  [Preorder(Iter)](</algorithmn-notes/preorder(iter).html>)
-  [Inorder(Iter)](</algorithmn-notes/inorder(iter).html>)
+  [Preorder(Iter)](/algorithmn-notes/preorder-iter.html)
+  [Inorder(Iter)](/algorithmn-notes/inorder-iter.html)

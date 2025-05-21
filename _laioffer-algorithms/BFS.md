@@ -2,7 +2,6 @@
 layout: default
 title: BFS
 narrow: true
-"aliases:": BFS_alg
 ---
 
 ## 综述
@@ -21,9 +20,9 @@ Step6：Deduplication 策略是什么？在入队前置 visited=true 是否可�
 ## Tree-层次遍历
 
 - 核心：记录当前层的节点个数
-  [Cousin in Binary Tree](/algorithmn-notes/cousininbinarytree.html)
-  [Print Tree in zig-zag ways](/algorithmn-notes/printtreeinzig-zagways.html)
-  [Reconstruct Binary Search Tree With Level Order](/algorithmn-notes/reconstructbinarysearchtreewithlevelorder.html)
+  [Cousin in Binary Tree](/algorithmn-notes/cousin-in-binary-tree.html)
+  [Print Tree in zig-zag ways](/algorithmn-notes/print-tree-in-zig-zag-ways.html)
+  [Reconstruct Binary Search Tree With Level Order](/algorithmn-notes/reconstruct-binary-search-tree-with-level-order.html)
 
 ## 最短路相关
 
@@ -47,7 +46,7 @@ Dijkstra
 - 松弛成功 → 允许重新压回队列
 - 借助 `relaxCount`（入队次数）即可在 `≥ N` 次时判定负环。
 
-[UnweightedGraph](/algorithmn-notes/unweightedgraph.html)
+[无权图](/algorithmn-notes/unweighted-graph.html)
 [Dijkstra](/algorithmn-notes/dijkstra.html)
 
 - HashSet, TreeSet 与 PriorityQueue
@@ -69,7 +68,7 @@ TreeMap 和 HashMap 的比较:维持"全局有序"——TreeMap 最核心的额�
    - 每一次 `put` / `get` 都要 `compare()`（或 `compareTo()`）。
 2. **自平衡（红黑树约束）**
    - 插入或删除可能破坏平衡，TreeMap 通过 **O(1)** 次旋转 + 重染色修复。
-   - 任何时刻树高 ≤ `2 log₂(n+1)`，保证操作 `O(log n)`。
+   - 任何时刻树高 ≤ `2 log₂(n+1)`，保证操作 `O(log n)`。
 3. TreeMap 基于"有序"特性提供的**前驱 / 后继 / 区间**检索方法
    • `firstKey()` / `lastKey()` — 最小 / 最大键  
    • `lowerKey(k)` — `‹ k` 的最大键  

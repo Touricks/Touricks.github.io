@@ -2,7 +2,6 @@
 layout: default
 title: DP
 narrow: true
-"aliases:": DP_alg
 ---
 
 ## 综述
@@ -72,7 +71,7 @@ Step4：Result 结果如何收集
 | **B. 子问题不重叠**                                 | **"计算 n!（阶乘）"**                                            | - 递归公式 `f(n)=n·f(n-1)` 虽然看似"子问题"，但 **每个 n 只被用一次**；- 不存在多条路径反复需要 `f(k)`，所以记忆化 / DP 不会节省任何工作；                                                               | 递归或循环 **O(n)** 乘法即可          |
 | **C. 无法用单一 index（或有限维）把状态彻底封闭**   | "会议室安排相关问题：给定若干区间，找能安放的最大互不重叠区间数" | - 若把区间按结束排序，用 `dp[i] = 以第 i 个区间结尾的最多场数` 可以在证明最优子结构后进行 DP，但是 DP 代码复杂度不如直接贪。下面给出 DP 解法链接。                                                       | 贪心 /DP（结束时间最早）TC O(n log n) |
 
-[MeetingRoomsProblem](/algorithmn-notes/meetingroomsproblem.html)
+[会议室问题](/algorithmn-notes/meeting-rooms-problem.html)
 
 ## 使用前缀和和拍扁技巧的 DP
 
@@ -82,26 +81,26 @@ Step4：Result 结果如何收集
 
 - 左大段右小段，大段读表小段计算
 - 切绳子
-  - [Max Product Of Cutting Rope](/algorithmn-notes/maxproductofcuttingrope.html)
+  - [Max Product Of Cutting Rope](/algorithmn-notes/max-product-of-cutting-rope.html)
   - 左大段右小段: 大段，是不用重新计算，读表格的方式获得的部分；小段是需要计算的部分
   - 注意是否需要**至少切一段**,可以通过默认值控制(dp[0])或者给较小值 hard code base case
 - 切字符串
-  - [Dictionary WordI](/algorithmn-notes/dictionarywordi.html)
+  - [Dictionary WordI](/algorithmn-notes/dictionary-wordi.html)
 - 最大子串和，返回左右边界
-  - [LargestSubarraySum](/algorithmn-notes/largestsubarraysum.html)
+  - [LargestSubarraySum](/algorithmn-notes/largest-subarray-sum.html)
 - 跳格子
-  - [Array Hopper I](/algorithmn-notes/arrayhopperi.html)
-  - [Array Hopper II](/algorithmn-notes/arrayhopperii.html)
+  - [Array Hopper I](/algorithmn-notes/array-hopper-i.html)
+  - [Array Hopper II](/algorithmn-notes/array-hopper-ii.html)
 - 编辑距离
-  - [Edit Distance](/algorithmn-notes/editdistance.html)
+  - [Edit Distance](/algorithmn-notes/edit-distance.html)
 - 最大正方形
-  - [LargestSquareOf1s](/algorithmn-notes/largestsquareof1s.html)
+  - [LargestSquareOf1s](/algorithmn-notes/largest-square-of-1s.html)
 
 ## 树型 DP
 
 ### 树上路径问题
 
-![TreePathProblems](/algorithmn-notes/treepathproblems.html)
+![树上路径问题](/algorithmn-notes/tree-path-problems.html)
 
 ## 区间 DP
 

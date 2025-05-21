@@ -1,3 +1,9 @@
+---
+layout: default
+title: CursorMCP
+narrow: true
+---
+
 ```json
 {
   "mcpServers": {
@@ -8,5 +14,5 @@
   }
 }
 ```
-将上面这段代码注入 cursor->设置->MCP中，重启cursor即可
 
+将上面这段代码注入 cursor->设置->MCP 中，重启 cursor 即可

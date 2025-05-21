@@ -1,3 +1,9 @@
+---
+layout: default
+title: BSTdelete
+narrow: true
+---
+
 Delete the target key K in the given binary search tree if the binary search tree contains K. Return the root of the binary search tree.
 
 Find your own way to delete the node from the binary search tree, after deletion the binary search tree's property should be maintained.
@@ -5,8 +11,9 @@ Find your own way to delete the node from the binary search tree, after deletion
 **Assumptions**
 
 - There are no duplicate keys in the binary search tree
-    The smallest larger node is first candidate after deletion
-***
+  The smallest larger node is first candidate after deletion
+
+---
 
 ```java
 public TreeNode deleteTree(TreeNode root, int key) {
