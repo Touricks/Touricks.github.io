@@ -100,7 +100,7 @@ Step4：Result 结果如何收集
 
 ### 树上路径问题
 
-![树上路径问题](/algorithmn-notes/tree-path-problems.html)
+- [树上路径问题](/algorithmn-notes/tree-path-problems.html)
 
 ## 区间 DP
 

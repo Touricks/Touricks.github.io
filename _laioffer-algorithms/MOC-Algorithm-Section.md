@@ -19,7 +19,7 @@ dfs -> dp ->
 
 ## Two-Pointer
 
-[TwoPointer](/algorithmn-notes/two-pointer.html)
+[TwoPointer](/algorithmn-notes/twopointer.html)
 
 ## Recursion
 
@@ -35,7 +35,7 @@ dfs -> dp ->
 
 ## Binary Search
 
-[BinarySearch](/algorithmn-notes/binary-search.html)
+[BinarySearch](/algorithmn-notes/binarysearch.html)
 
 ## TopK
 
