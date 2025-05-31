@@ -1,6 +1,6 @@
-﻿---
+---
 layout: default
-title: Common-File-Functions-Overview
+title: File Setup
 narrow: true
 ---
 - **`README.md`** 给 AI（和人）一个总览：项目目的、已完成里程碑、目录结构。

@@ -1,8 +1,9 @@
-﻿---
+---
 layout: default
-title: Reorder-Linked-List
+title: Reorder Linked List
 narrow: true
 ---
+
 Reorder the given singly-linked list N1 -> N2 -> N3 -> N4 -> … -> Nn -> null to be N1- > Nn -> N2 -> Nn-1 -> N3 -> Nn-2 -> … -> null
 
 **Examples**
@@ -11,28 +12,32 @@ Reorder the given singly-linked list N1 -> N2 -> N3 -> N4 -> … -> Nn -> null t
 - L = 1 -> null, is reordered to 1 -> null
 - L = 1 -> 2 -> 3 -> 4 -> null, is reordered to 1 -> 4 -> 2 -> 3 -> null
 - L = 1 -> 2 -> 3 -> null, is reordred to 1 -> 3 -> 2 -> null
-***
+
+---
 
 - Step1：找中点，切断
-- Step2:  Reverse后半段
-- Step3：拼接两段LinkedList
+- Step2: Reverse 后半段
+- Step3：拼接两段 LinkedList
 
-- Function能做什么
+- Function 能做什么
+
 ```java
 public ListNode reorder(ListNode root);
 ```
-给定一个root,我能返回从root出发，按照题目要求变序后的LinkedList的root
+
+给定一个 root,我能返回从 root 出发，按照题目要求变序后的 LinkedList 的 root
 
 - Step1：找中点：two-pointer
-	- slow++,fast+2, until fast reach the end.
-	- return slow
-- Step2: 切断，reverse后半段
-	- root2 = slow.next
-	- slow.next = null
-	- reverse(root2)
-- Step3: 拼接两段LinkedList
+  - slow++,fast+2, until fast reach the end.
+  - return slow
+- Step2: 切断，reverse 后半段
+  - root2 = slow.next
+  - slow.next = null
+  - reverse(root2)
+- Step3: 拼接两段 LinkedList
 
 - 注意，为了防止自环，最稳妥的方法还是先保存两条链的下一个节点
+
 ```java
 while (l1 != null && l2 != null) {
     ListNode n1 = l1.next, n2 = l2.next;
@@ -44,7 +49,9 @@ while (l1 != null && l2 != null) {
     l2 = n2;
 }
 ```
+
 Code
+
 ```java
 public class Solution {
   public ListNode reorder(ListNode head) {
@@ -63,12 +70,12 @@ public class Solution {
       cur.next = root2;
       root2 = root2.next;
       cur = cur.next;
-      
+
     }
     while(root1 != null){
       cur.next = root1;
       cur = cur.next;
-      root1 = root1.next; 
+      root1 = root1.next;
     }
     return dummy.next;
   }

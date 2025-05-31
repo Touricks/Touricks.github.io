@@ -1,11 +1,13 @@
-﻿---
+---
 layout: default
-title: Longest-consecutive-PathII
+title: Longest consecutive PathII
 narrow: true
 ---
+
 https://www.lintcode.com/problem/614/
-给定一棵二叉树，找到最长连续序列(单调且相邻节点值相差为1)路径的长度(节点数)。  
+给定一棵二叉树，找到最长连续序列(单调且相邻节点值相差为 1)路径的长度(节点数)。  
 路径起点跟终点可以为二叉树的任意节点。
+
 ```
 输入:
 {1,2,0,3}
@@ -19,6 +21,7 @@ https://www.lintcode.com/problem/614/
 3
 0-1-2-3
 ```
+
 ```
 输入:
 {3,2,2}
@@ -30,14 +33,18 @@ https://www.lintcode.com/problem/614/
   2   2
 2-3
 ```
-***
+
+---
+
 Step1 Signature
+
 ```
 int[] dfs(root,ans)
 ```
-- 由于从子树出发，升序和降序对当前节点是有影响的，所以我们返回两个值，装在一个int[]中
-- int[0] 从root出发的最长递增序列长度
-- int[1] 从root出发的最长递减序列长度
+
+- 由于从子树出发，升序和降序对当前节点是有影响的，所以我们返回两个值，装在一个 int[]中
+- int[0] 从 root 出发的最长递增序列长度
+- int[1] 从 root 出发的最长递减序列长度
 
 Step2 Base Case
 root = null return {0,0}
@@ -50,7 +57,7 @@ right = dfs(root.right,ans)
 Step4: Recursive Rule
 left[0] = 0 if left.key != root.key+1
 left[1] = 0 if left.key != root.key-1
-right同理
+right 同理
 
 ans = MAX(left[0]+right[1]+1,left[1]+right[0]+1)
 Inc = MAX(left[0],right[0])+1
@@ -58,6 +65,7 @@ Dec = MAX(left[1],right[1])+1
 return new int[]{Inc,Dec};
 
 - Code
+
 ```java
 public int longestConsecutive2(TreeNode root) {
         int[] ans = new int[]{Integer.MIN_VALUE};
