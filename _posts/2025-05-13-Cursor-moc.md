@@ -7,4 +7,4 @@ layout: defaults/post # 明确指定
 narrow: true
 ---
 
-[Cursor 使用指南](/algorithmn-notes/moc-cursor-user-guide.html)
+[Cursor 使用指南](/cursor-docs/MOC-Cursor-User-Guide.html)
