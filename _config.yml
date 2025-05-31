@@ -60,7 +60,7 @@ defaults:
 collections:
   blog_algorithm:
     output: true
-    permalink: /algorithmnnotes/:name.html # Using :name for filename-based slug with .html
+    permalink: /algorithmnotes/:name.html # Using :name for filename-based slug with .html
   blog_cursor:
     output: true
     permalink: /cursordocs/:name.html
