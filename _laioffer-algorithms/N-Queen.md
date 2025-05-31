@@ -5,6 +5,7 @@ narrow: true
 ---
 
 https://app.laicode.io/app/problem/233?plan=3
+
 Get all valid ways of putting N Queens on an N \* N chessboard so that no two Queens threaten each other.
 
 **Assumptions**
