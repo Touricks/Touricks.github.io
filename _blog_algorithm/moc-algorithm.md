@@ -13,35 +13,35 @@ narrow: true
 
 ## DFS
 
-[DFS](/algorithmnnotes/dfs.html)
+[DFS](/algorithmnotes/dfs.html)
 
 ## Two-Pointer and MonoStack
 
-[TwoPointer](/algorithmnnotes/twopointer.html)
+[TwoPointer](/algorithmnotes/twopointer.html)
 
 ## Recursion
 
-[Recursion](/algorithmnnotes/recursion.html)
+[Recursion](/algorithmnotes/recursion.html)
 
 ## BFS
 
-[BFS-Algorithm](/algorithmnnotes/bfs.html)
+[BFS-Algorithm](/algorithmnotes/bfs.html)
 
 ## DP
 
-[DP-Algorithm](/algorithmnnotes/dp.html)
+[DP-Algorithm](/algorithmnotes/dp.html)
 
 ## Binary Search
 
-[Binary-Search](/algorithmnnotes/binarysearch.html)
+[Binary-Search](/algorithmnotes/binarysearch.html)
 
 ## TopK
 
-[TopK](/algorithmnnotes/topk.html)
+[TopK](/algorithmnotes/topk.html)
 
 ## Special Topic
 
-[Special Topic](/algorithmnnotes/special-topic.html)
+[Special Topic](/algorithmnotes/special-topic.html)
 
 Special Topic 目前收录：
 
@@ -55,10 +55,10 @@ Special Topic 目前收录：
 
 ## 牢题目（Error3+）
 
-- 尝试用 Recursion 做这一题：[FlattenBinaryTree](/algorithmnnotes/flattenbinarytree.html)
-- laioffer 最难题目，没有更难！：[WordLadder3](/algorithmnnotes/wordladder3.html)
-- 细节有亿点点多：[Kth Closest Point To (0,0,0)](/algorithmnnotes/kth-closest-point-to-0-0-0.html)
-- 下标处理和 CornerCase 一定要先处理好：[MedianOfTwoSortedArray](/algorithmnnotes/medianoftwosortedarray.html)
+- 尝试用 Recursion 做这一题：[FlattenBinaryTree](/algorithmnotes/flattenbinarytree.html)
+- laioffer 最难题目，没有更难！：[WordLadder3](/algorithmnotes/wordladder3.html)
+- 细节有亿点点多：[Kth Closest Point To (0,0,0)](/algorithmnotes/kth-closest-point-to-0-0-0.html)
+- 下标处理和 CornerCase 一定要先处理好：[MedianOfTwoSortedArray](/algorithmnotes/medianoftwosortedarray.html)
 
 ## 答疑
 
