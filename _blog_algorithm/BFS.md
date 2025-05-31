@@ -1,6 +1,6 @@
 ---
 layout: default
-title: BFS
+title: BFS-Algorithm
 narrow: true
 ---
 

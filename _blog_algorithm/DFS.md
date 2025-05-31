@@ -4,10 +4,6 @@ title: DFS
 narrow: true
 ---
 
-```table-of-contents
-
-```
-
 # 综述
 
 ## DFS 和 Recursion 的区别
@@ -25,7 +21,7 @@ narrow: true
 
 ### 典型例子对比
 
-- **DFS例子 - 排列组合问题**:
+- **DFS 例子 - 排列组合问题**:
 
 ```java
 void dfs(List<Integer> path, boolean[] used) {
@@ -45,7 +41,7 @@ void dfs(List<Integer> path, boolean[] used) {
 }
 ```
 
-- **Recursion例子 - 树的最大深度**:
+- **Recursion 例子 - 树的最大深度**:
 
 ```java
 int maxDepth(TreeNode root) {

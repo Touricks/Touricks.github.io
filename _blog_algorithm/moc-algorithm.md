@@ -25,15 +25,15 @@ narrow: true
 
 ## BFS
 
-[BFS](/algorithmn-notes/bfs.html)
+[BFS-Algorithm](/algorithmn-notes/bfs.html)
 
 ## DP
 
-[DP](/algorithmn-notes/dp.html)
+[DP-Algorithm](/algorithmn-notes/dp.html)
 
 ## Binary Search
 
-[BinarySearch](/algorithmn-notes/binarysearch.html)
+[Binary-Search](/algorithmn-notes/binarysearch.html)
 
 ## TopK
 
