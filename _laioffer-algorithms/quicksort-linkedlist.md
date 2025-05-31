@@ -1,9 +1,8 @@
----
+﻿---
 layout: default
-title: QuickSort LinkedList
+title: QuickSort-LinkedList
 narrow: true
 ---
-
 Given a singly-linked list, where each node contains an integer value, sort it in ascending order. The quick sort algorithm should be used to solve this problem.
 
 **Examples**
@@ -11,24 +10,24 @@ Given a singly-linked list, where each node contains an integer value, sort it i
 - null, is sorted to null
 - 1 -> null, is sorted to 1 -> null
 - 1 -> 2 -> 3 -> null, is sorted to 1 -> 2 -> 3 -> null
-- 4 -> 2 -> 6 -> -3 -> 5 -> null, is sorted to -3 -> 2 -> 4 -> 5 -> 6
+- 4 -> 2 -> 6 -> -3 -> 5 -> null, is sorted to -3 -> 2 -> 4 -> 5 -> 6
 
----
+***
 
 - ListNode quickSort(ListNode head)
-  给定一个 head，返回一个新 head，使得链表升序排列
+	给定一个head，返回一个新head，使得链表升序排列
 - Base Case
-  head = null, return null
+	head = null, return null
 - Recursive Rule1
-  - 先从头到尾判断每个数和 head 值的比较
-  - 小于 head 的进入一个 LL
-  - 大于 head 的进入一个 LL
+	- 先从头到尾判断每个数和head值的比较
+	- 小于head的进入一个LL
+	- 大于head的进入一个LL
 - Subproblem：
-  - quickSort(smallDummy.next)
-  - quickSort(largeDummy.next)
-  - 对两段链表进行排序
+	- quickSort(smallDummy.next)
+	- quickSort(largeDummy.next)
+	- 对两段链表进行排序
 - Recursive Rule2
-  - 合并：small - equal - large
+	- 合并：small - equal - large
 
 ```java
 /**

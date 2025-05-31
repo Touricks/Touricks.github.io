@@ -1,6 +1,6 @@
----
+﻿---
 layout: default
-title: Combination Sum
+title: Combination-Sum
 narrow: true
 ---
 
@@ -11,26 +11,23 @@ Elements in a combination (a1, a2, … , ak) must be in non-descending order.
 The solution set must not contain duplicate combinations.
 
 Example
-given candidate set 2,3,6,7 and target 7,
-A solution set is:
-[7]
-[2, 2, 3]
-
----
-
+    given candidate set 2,3,6,7 and target 7,
+    A solution set is:
+     [7]
+     [2, 2, 3]
+***
 - Method1: 每层思考一个元素，思考加几个
+	- 层数：input中元素的个数
+	- 分支：当前rem最多能被累加几个当前层考虑的candidate
+	- base case: index = length, target = 0时加结果
 
-  - 层数：input 中元素的个数
-  - 分支：当前 rem 最多能被累加几个当前层考虑的 candidate
-  - base case: index = length, target = 0 时加结果
 
 - Method2：每层思考一个位置
-  - 分支：input 中的所有元素
-  - 层数：最小的那个 input 中的元素能够被减几次
-- dfs rule: 从当前 index 开始往后看，依次尝试加一个元素来到当前的位置，dfs 往下走
-- 代码中使用 candidate.length 表示选项个数，index 表示已经走到哪一个元素。为了避免重复，我们不能选 index 之前的元素
-- base case：rem == 0 加结果，index == len 做 base case 的保障
-
+	- 分支：input中的所有元素
+	- 层数：最小的那个input中的元素能够被减几次
+- dfs rule: 从当前index开始往后看，依次尝试加一个元素来到当前的位置，dfs往下走
+- 代码中使用candidate.length表示选项个数，index表示已经走到哪一个元素。为了避免重复，我们不能选index之前的元素
+- base case：rem == 0加结果，index == len做base case的保障
 ```
                [root]
           /    |     \      \
@@ -41,7 +38,6 @@ A solution set is:
 ```
 
 - Method1
-
 ```java
 class Solution {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
@@ -74,14 +70,13 @@ class Solution {
             while (times < i) { // 帮助吐
                 cur.remove(cur.size() - 1);
                 times++;
-            }
+            } 
         }
     }
 }
 ```
 
 - Method2
-
 ```java
 class Solution {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
@@ -94,7 +89,7 @@ class Solution {
         helper(candidates, target, 0, cur, result);
         return result;
     }
-
+    
     private void helper(int[] candidates, int remain, int level, List<Integer> cur, List<List<Integer>> result) {
         // base case
         if (remain == 0) {

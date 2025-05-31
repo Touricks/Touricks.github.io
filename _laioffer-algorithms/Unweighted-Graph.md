@@ -1,19 +1,17 @@
----
+﻿---
 layout: default
-title: Unweighted Graph
+title: 无权图
 narrow: true
 ---
-
 https://leetcode.com/problems/shortest-path-in-binary-matrix/description/
-Given an `n x n` binary matrix `grid`, return _the length of the shortest **clear path** in the matrix_. If there is no clear path, return `-1`.
+Given an `n x n` binary matrix `grid`, return _the length of the shortest **clear path** in the matrix_. If there is no clear path, return `-1`.
 
-A **clear path** in a binary matrix is a path from the **top-left** cell (i.e., `(0, 0)`) to the **bottom-right** cell (i.e., `(n - 1, n - 1)`) such that:
+A **clear path** in a binary matrix is a path from the **top-left** cell (i.e., `(0, 0)`) to the **bottom-right** cell (i.e., `(n - 1, n - 1)`) such that:
 
-- All the visited cells of the path are `0`.
-- All the adjacent cells of the path are **8-directionally** connected (i.e., they are different and they share an edge or a corner).
+- All the visited cells of the path are `0`.
+- All the adjacent cells of the path are **8-directionally** connected (i.e., they are different and they share an edge or a corner).
 
-The **length of a clear path** is the number of visited cells of this path
-
+The **length of a clear path** is the number of visited cells of this path
 ```
 **Input:** grid = [[0,0,0],[1,1,0],[1,1,0]]
 **Output:** 4
@@ -21,15 +19,13 @@ The **length of a clear path** is the number of visited cells of this path
 **Input:** grid = [[1,0,0],[1,1,0],[1,1,0]]
 **Output:** -1
 ```
-
----
-
+***
 无权图最短路径 - BFS
 `Queue<Node>`, Node: x,y
 Corner Case: Node = target return
-Expand: 在第 k 轮我们扩展到的位置
-Generate：如果目标未被访问，则访问并标记。由于是无权图，第一次访问即为最短路，标记 visit 防止重复入队
-Deduplication：设置 visit，表示某个位置上的节点是否入队
+Expand: 在第k轮我们扩展到的位置
+Generate：如果目标未被访问，则访问并标记。由于是无权图，第一次访问即为最短路，标记visit防止重复入队
+Deduplication：设置visit，表示某个位置上的节点是否入队
 
 ```java
 	final int[] dx = new int[]{0,0,1,1,1,-1,-1,-1};

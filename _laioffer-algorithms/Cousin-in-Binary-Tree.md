@@ -1,13 +1,11 @@
----
+﻿---
 layout: default
-title: Cousin in Binary Tree
+title: Cousin-in-Binary-Tree
 narrow: true
 ---
-
-Given a binary Tree and the two keys, determine whether the two nodes are cousins of each other or not. Two nodes are cousins of each other if they are at the same level and have different parents.
+Given a binary Tree and the two keys, determine whether the two nodes are cousins of each other or not. Two nodes are cousins of each other if they are at the same level and have **different** parents.
 
 **Assumptions:**
-
 - It is not guranteed the two keys are all in the binary tree.
 - There are no duplicate keys in the binary tree.
 
@@ -20,19 +18,19 @@ Given a binary Tree and the two keys, determine whether the two nodes are cousin
 7 and 1, result is true.  
 3 and 5, result is false.  
 7 and 5, result is false.
-
----
-
-Step1：Data Structure：使用 Queue 记录当前层和下层的节点，由于节点不重复，使用 Integer 表示对应的节点
-Step2：Initial State：第一层的元素，如果树为空则返回 false
-Step3：每一轮 Expand（queue.pop()）的意义是什么：取出当前层树上的节点
-Step4：Generate 的条件是什么？如何 Generate？将下一层的节点加入 queue
-Step5：Termination Condition 是什么
-如果在同一层找到两个数，则提前返回 true
-**如果找到的节点的父亲是同一个，则不算 cousin**
-Step6：Deduplication 策略是什么？在入队前置 visited=true 是否可行
-不需要维护 dedup
-
+***
+Step1：Data Structure：使用Queue记录当前层和下层的节点，由于节点不重复，使用Integer表示对应的节点
+Step2：Initial State：第一层的元素，如果树为空则返回false
+Step3：每一轮Expand（queue.pop()）的意义是什么：取出当前层树上的节点
+Step4：Generate的条件是什么？如何Generate？将下一层的节点加入queue
+Step5：Termination Condition是什么 
+	如果在同一层找到两个数，则提前返回true
+	**如果找到的节点的父亲是同一个，则不算cousin**
+Step6：Deduplication策略是什么？在入队前置visited=true是否可行
+	不需要维护dedup
+- 易错点：
+	- 因为我们要维护父亲节点，我们要使用Pair来存储一个节点的信息
+	- 两个节点互相是Cousin，仅当在同一层中遇到，且父节点不相同
 ```java
 class Pair {
     public final TreeNode x;
