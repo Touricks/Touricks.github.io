@@ -1,5 +1,5 @@
 ﻿---
 layout: default
-title: MOC Algorithm
+title: AlgorithmMOC
 narrow: true
 ---
