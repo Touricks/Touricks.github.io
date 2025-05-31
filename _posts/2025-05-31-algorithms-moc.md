@@ -1,5 +1,5 @@
 ---
-title: "算法学习 MOC"
+title: "ALgorithm Review"
 date: 2025-05-31
 tags:
   - MOC
