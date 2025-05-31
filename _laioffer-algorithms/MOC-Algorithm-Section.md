@@ -11,39 +11,39 @@ narrow: true
 - 这里是算法部分的总目录，下属一级目录
 - 一级目录：算法
 - 二级目录：算法使用的数据结构
-- 三级目录：使用对应数据结构和算法的例题
+- 三级目录：使用对应数据结构的例题
 
 ## DFS
 
-[DFS](/algorithmn-notes/dfs.html)
+[DFS](/algorithm-notes/dfs.html)
 
 ## Two-Pointer
 
-[TwoPointer](/algorithmn-notes/twopointer.html)
+[TwoPointer](/algorithm-notes/twopointer.html)
 
 ## Recursion
 
-[Recursion](/algorithmn-notes/recursion.html)
+[Recursion](/algorithm-notes/recursion.html)
 
 ## BFS
 
-[BFS](/algorithmn-notes/bfs.html)
+[BFS-Algorithm](/algorithm-notes/bfs.html)
 
 ## DP
 
-[DP](/algorithmn-notes/dp.html)
+[DP-Algorithm](/algorithm-notes/dp.html)
 
 ## Binary Search
 
-[BinarySearch](/algorithmn-notes/binarysearch.html)
+[Binary-Search](/algorithm-notes/binarysearch.html)
 
 ## TopK
 
-[TopK](/algorithmn-notes/topk.html)
+[TopK](/algorithm-notes/topk.html)
 
 ## Special Topic
 
-[Special Topic](/algorithm-notes/special-topic.html)
+[Special Topic](/algorithmnotes/special-topic.html)
 
 ## 牢题目（Error3+）
 
