@@ -13,42 +13,35 @@ narrow: true
 
 ## DFS
 
-[DFS](/algorithmnotes/dfs.html)
+[DFS](/algorithmn-notes/dfs.html)
 
 ## Two-Pointer and MonoStack
 
-[TwoPointer](/algorithmnotes/twopointer.html)
+[TwoPointer](/algorithmn-notes/twopointer.html)
 
 ## Recursion
 
-[Recursion](/algorithmnotes/recursion.html)
+[Recursion](/algorithmn-notes/recursion.html)
 
 ## BFS
 
-[BFS-Algorithm](/algorithmnotes/bfs.html)
+[BFS-Algorithm](/algorithmn-notes/bfs.html)
 
 ## DP
 
-[DP-Algorithm](/algorithmnotes/dp.html)
+[DP-Algorithm](/algorithmn-notes/dp.html)
 
 ## Binary Search
 
-[Binary-Search](/algorithmnotes/binarysearch.html)
+[Binary-Search](/algorithmn-notes/binarysearch.html)
 
 ## TopK
 
-[TopK](/algorithmnotes/topk.html)
+[TopK](/algorithmn-notes/topk.html)
 
 ## Special Topic
 
-[Special Topic](/algorithmnotes/special-topic.html)
-
-## 牢题目（Error3+）
-
-- 尝试用 Recursion 做这一题：[FlattenBinaryTree](/algorithmnotes/flattenbinarytree.html)
-- laioffer 最难题目，没有更难！：[WordLadder3](/algorithmnotes/wordladder3.html)
-- 细节有亿点点多：[Kth Closest Point To (0,0,0)](/algorithmnotes/kth-closest-point-to-0-0-0.html)
-- 下标处理和 CornerCase 一定要先处理好：[MedianOfTwoSortedArray](/algorithmnotes/medianoftwosortedarray.html)
+[Special Topic](/algorithmn-notes/special-topic.html)
 
 ## 答疑
 
