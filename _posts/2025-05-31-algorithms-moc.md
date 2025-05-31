@@ -7,4 +7,4 @@ layout: defaults/post # 明确指定
 narrow: true
 ---
 
-[算法笔记总目录](/algorithmn-notes/moc-alg.html)
+[算法笔记总目录](/algorithmnotes/moc-alg.html)
