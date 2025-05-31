@@ -10,23 +10,61 @@ narrow: true
 
 # 综述
 
-问自己几个问题：
+## DFS 和 Recursion 的区别
 
-- 每个 recursive call 是在做什么，代表什么
-- 每层的递归是在做什么
-- base case 是什么
+### 核心差别：状态回滚 vs 无状态回滚
 
-答题方法
+- **DFS（深度优先搜索）**:
+  - 特点是每次探索一条路径到底，然后**回退并清理状态**，再探索其他可能性
+  - **关键操作**：`add` → `递归调用` → `remove`（恢复状态）
+  - 目的是遍历所有可能的路径或组合
+- **Recursion（递归）**:
+  - 特点是将问题分解为更小的子问题，**无需显式维护全局状态**
+  - **关键操作**：直接根据子问题的结果构建当前问题的解
+  - 目的是通过分治的方式求解问题
 
-1. 每个递归的物理意义
-2. 递归解决什么问题，和原问题间的关系
-3. base case
-4. 用什么数据结构去记录你的 partial solution
+### 典型例子对比
 
-DFS vs. Recursion
+- **DFS例子 - 排列组合问题**:
 
-- Recursion 用于一个大问题分解为同类型的小问题 自己调用自己：构建解集：先构建子问题的解集，再在子问题解集的基础上构建当前问题的解集，从下到上
-- DFS Backtracking
+```java
+void dfs(List<Integer> path, boolean[] used) {
+    if (path.size() == n) {
+        result.add(new ArrayList<>(path));
+        return;
+    }
+    for (int i = 0; i < nums.length; i++) {
+        if (!used[i]) {
+            path.add(nums[i]);      // 状态改变
+            used[i] = true;         // 状态改变
+            dfs(path, used);        // 递归探索
+            used[i] = false;        // 状态回滚
+            path.remove(path.size()-1); // 状态回滚
+        }
+    }
+}
+```
+
+- **Recursion例子 - 树的最大深度**:
+
+```java
+int maxDepth(TreeNode root) {
+    if (root == null) return 0;
+    int leftDepth = maxDepth(root.left);   // 子问题1
+    int rightDepth = maxDepth(root.right); // 子问题2
+    return 1 + Math.max(leftDepth, rightDepth); // 合并结果
+}
+```
+
+### 解法特点
+
+- **DFS 解法特点**
+  - 需要显式维护状态（如当前路径、访问标记等）
+  - 从上到下地构建解，一直建到叶子，从叶子节点处收集解
+  - 先在当前层做完自己的事情，以干完的状态去不同的下一层，从上到下
+- **Recursion 解法特点**
+  - 不需要维护全局状态，通过参数传递必要信息
+  - 从下到上地构建解，先获得子问题答案，再构建当前层答案
   - 先在当前层做完自己的事情，以干完的状态去不同的下一层，从上到下
 - 相同点：都是基于 Recursion 实现（自己调用自己）的，不同的是构建解的顺序
 - 不同点：
@@ -38,46 +76,46 @@ DFS vs. Recursion
 ### Permutation 类问题（先后顺序不同是不同解）
 
 - 常用解题方法：每层思考一个位置
-- [Parentheses Problem1](/algorithmn-notes/Parentheses-Problem1.html)
+- [Parentheses Problem1](/algorithmn-notes/parentheses-problem1.html)
   - 括号序列问题 1，只能用每层决定一个位置才能得到最优解
-- [All Permutations1](/algorithmn-notes/All-Permutations1.html)
+- [All Permutations1](/algorithmn-notes/all-permutations1.html)
   - 字符串全排列，字母不会重复
-- [Parentheses Problem2](/algorithmn-notes/Parentheses-Problem2.html)
+- [Parentheses Problem2](/algorithmn-notes/parentheses-problem2.html)
   - 括号序列问题，三种括号但没有优先级，对右括号的放置有限制
-- [Parentheses Problem3](/algorithmn-notes/Parentheses-Problem3.html)
+- [Parentheses Problem3](/algorithmn-notes/parentheses-problem3.html)
   - 括号序列问题，三种括号有优先级，对左括号的放置也有限制了
   - 和 Problem2 的差别只有左括号放置时的条件有所改变，一行差别
-- [All Permutations2](/algorithmn-notes/All-Permutations2.html)
+- [All Permutations2](/algorithmn-notes/all-permutations2.html)
   - 字符串全排列-允许字符重复，求长度为 s.length 的全排列
   - 使用 HashSet 去重，保证**要固定到同一位置的两个元素的 value 不会有重复**
   - 对于每个尝试换过来的位置，都用一个 set 确保换过来的点没有重复
-- [All Permutations3](/algorithmn-notes/All-Permutations3.html)
+- [All Permutations3](/algorithmn-notes/all-permutations3.html)
   - 字符串的全排列-允许字符重复，求任意长度的全排列
   - 即：元素数量可以不同
   - 当前层的意义：`[0,index)的内容`，需要加入解
-- [N Queen](/algorithmn-notes/N-Queen.html)
+- [N Queen](/algorithmn-notes/n-queen.html)
   - 经典 N Queens 问题
 
 ### Combination 类问题（仅先后顺序不同是相同解）
 
 - 常用解题方法：每次考虑一个元素的个数
   - 也可以使用每层考虑一个位置，但是**每个位置可以采用的元素必须是单调的（见 AllSubset1）**
-- [AllSubset1](/algorithmn-notes/AllSubset1.html)
+- [AllSubset1](/algorithmn-notes/allsubset1.html)
   - 找字符串的所有子集，不包含重复元素
   - Combination 问题,字符串的任意子集
-- [Combination-Sum](/algorithmn-notes/Combination-Sum.html)
+- [Combination-Sum](/algorithmn-notes/combination-sum.html)
   - Combination 问题，完全背包，物品数量不限，问是否能正好装满，但要输出方案
-- [Combination Of Coins](/algorithmn-notes/Combination-Of-Coins.html) （99Cents）
+- [Combination Of Coins](/algorithmn-notes/combination-of-coins.html) （99Cents）
   - Combination 问题：完全背包
-- [All Subset2](/algorithmn-notes/All-Subset2.html)
+- [All Subset2](/algorithmn-notes/all-subset2.html)
   - 找字符串的所有长度为 k 的子集
   - 虽然结果长度固定，但是先后顺序在答案里不构成区分，决定这题是一个 combination 问题
-- [All Subset3](/algorithmn-notes/All-Subset3.html)
+- [All Subset3](/algorithmn-notes/all-subset3.html)
   - 找字符串的所有子集，包含重复元素
   - 需要先给字符串排序，才能开始烤肉
-- [All Subset4](/algorithmn-notes/All-Subset4.html)
+- [All Subset4](/algorithmn-notes/all-subset4.html)
   - 找字符串的所有长度为 k 的子集，包含重复元素
-- [FactorCombination](/algorithmn-notes/FactorCombination.html)
+- [FactorCombination](/algorithmn-notes/factorcombination.html)
   - 因数模拟，target 的修改从加减变成整除
 
 ## Tree
@@ -160,11 +198,11 @@ DFS vs. Recursion
 
 #### 树上路径问题(Top-Down:信息自顶而下)
 
-[树上路径问题(TopDown)](</algorithmn-notes/(TopDown).html>)
+[树上路径问题(TopDown)](/algorithmn-notes/topdown.html)
 
 #### 树上路径问题（Bottom-up:信息自底而上）
 
-[树上路径问题(Bottomup)](</algorithmn-notes/(Bottomup).html>)
+[树上路径问题(Bottomup)](/algorithmn-notes/bottomup.html)
 
 ### LCA
 

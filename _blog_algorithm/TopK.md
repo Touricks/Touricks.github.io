@@ -89,7 +89,7 @@ class Person implements Comparable<Person> {
   - 1.  使用 Map.Entry
   - 2.  Override hashCode & equals
 - TopK 题最重要的是 corner case 的处理，
-- [TopK-Frequent-Words](/algorithmn-notes/TopK-Frequent-Words.html)
+- [TopK-Frequent-Words](/algorithmn-notes/topk-frequent-words.html)
   - k 的值比不同单词的数量高怎么办
     - 最后创建 String 数组时明确 k 值不一定等于真实容量
   - 单词列表可不可以出现 null
@@ -98,14 +98,14 @@ class Person implements Comparable<Person> {
     - 返回空数组
   - 离线还是在线？如果要求在线 topK 怎么办？
     - 注：将 PriorityQueue 变为 TreeSet 就可以了，改下对应 API
-- [Kth-Smallest-In-Matrix](/algorithmn-notes/Kth-Smallest-In-Matrix.html)
+- [Kth-Smallest-In-Matrix](/algorithmn-notes/kth-smallest-in-matrix.html)
 
   - Override 关键词只有在 implements 的接口需要时才使用，否则报错
   - 比如实现 Comparable 的时候给 compare 加 Override decorator
 
-- [Ksmallestwith357](/algorithmn-notes/Ksmallestwith357.html)
+- [Ksmallestwith357](/algorithmn-notes/ksmallestwith357.html)
 
   - 注意变量范围（int/long）
 
-- [Kth Closest Point To (0,0,0)](</algorithmn-notes/Kth-Closest-Point-To-(0,0,0).html>)
+- [Kth Closest Point To (0,0,0)](/algorithmn-notes/kth-closest-point-to-0-0-0.html)
   - 需要 override 比较器和相关函数

@@ -13,35 +13,35 @@ narrow: true
 
 ## DFS
 
-[DFS](/algorithmn-notes/DFS.html)
+[DFS](/algorithmn-notes/dfs.html)
 
 ## Two-Pointer and MonoStack
 
-[TwoPointer](/algorithmn-notes/TwoPointer.html)
+[TwoPointer](/algorithmn-notes/twopointer.html)
 
 ## Recursion
 
-[Recursion](/algorithmn-notes/Recursion.html)
+[Recursion](/algorithmn-notes/recursion.html)
 
 ## BFS
 
-[BFS](/algorithmn-notes/BFS.html)
+[BFS](/algorithmn-notes/bfs.html)
 
 ## DP
 
-[DP](/algorithmn-notes/DP.html)
+[DP](/algorithmn-notes/dp.html)
 
 ## Binary Search
 
-[BinarySearch](/algorithmn-notes/BinarySearch.html)
+[BinarySearch](/algorithmn-notes/binarysearch.html)
 
 ## TopK
 
-[TopK](/algorithmn-notes/TopK.html)
+[TopK](/algorithmn-notes/topk.html)
 
 ## Special Topic
 
-[Special Topic](/algorithmn-notes/Special-Topic.html)
+[Special Topic](/algorithmn-notes/special-topic.html)
 
 Special Topic 目前收录：
 
@@ -55,10 +55,10 @@ Special Topic 目前收录：
 
 ## 牢题目（Error3+）
 
-- 尝试用 Recursion 做这一题：[FlattenBinaryTree](/algorithmn-notes/FlattenBinaryTree.html)
-- laioffer 最难题目，没有更难！：[WordLadder3](/algorithmn-notes/WordLadder3.html)
-- 细节有亿点点多：[Kth Closest Point To (0,0,0)](</algorithmn-notes/Kth-Closest-Point-To-(0,0,0).html>)
-- 下标处理和 CornerCase 一定要先处理好：[MedianOfTwoSortedArray](/algorithmn-notes/MedianOfTwoSortedArray.html)
+- 尝试用 Recursion 做这一题：[FlattenBinaryTree](/algorithmn-notes/flattenbinarytree.html)
+- laioffer 最难题目，没有更难！：[WordLadder3](/algorithmn-notes/wordladder3.html)
+- 细节有亿点点多：[Kth Closest Point To (0,0,0)](/algorithmn-notes/kth-closest-point-to-0-0-0.html)
+- 下标处理和 CornerCase 一定要先处理好：[MedianOfTwoSortedArray](/algorithmn-notes/medianoftwosortedarray.html)
 
 ## 答疑
 
