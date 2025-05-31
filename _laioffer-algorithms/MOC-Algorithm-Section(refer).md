@@ -1,43 +1,45 @@
-﻿---
+---
 layout: default
 title: MOC Algorithm
 narrow: true
 ---
+
+(Reference Only)
 
 ## 前言
 
 - 这里是算法部分的总目录，下属一级目录
 - 一级目录：算法
 - 二级目录：算法使用的数据结构
-- 三级目录：使用对应数据结构的例题
+- 三级目录：使用对应数据结构和算法的例题
 
 ## DFS
 
-[DFS](/algorithm-notes/dfs.html)
+[DFS](/algorithmn-notes/dfs.html)
 
-## Two-Pointer and MonoStack
+## Two-Pointer
 
-[TwoPointer](/algorithm-notes/twopointer.html)
+[TwoPointer](/algorithmn-notes/twopointer.html)
 
 ## Recursion
 
-[Recursion](/algorithm-notes/recursion.html)
+[Recursion](/algorithmn-notes/recursion.html)
 
 ## BFS
 
-[BFS-Algorithm](/algorithm-notes/bfs.html)
+[BFS](/algorithmn-notes/bfs.html)
 
 ## DP
 
-[DP-Algorithm](/algorithm-notes/dp.html)
+[DP](/algorithmn-notes/dp.html)
 
 ## Binary Search
 
-[Binary-Search](/algorithm-notes/binarysearch.html)
+[BinarySearch](/algorithmn-notes/binarysearch.html)
 
 ## TopK
 
-[TopK](/algorithm-notes/topk.html)
+[TopK](/algorithmn-notes/topk.html)
 
 ## Special Topic
 
