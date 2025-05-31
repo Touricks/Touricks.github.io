@@ -38,3 +38,15 @@ narrow: true
 ## TopK
 
 [TopK](/algorithmn-notes/topk.html)
+
+## Special Topic
+
+[Special Topic](/algorithmnotes/special-topic.html)
+
+## 答疑
+
+- CT V 单调栈题目的求解规律（前缀后缀数组在单调栈题目中的应用）
+- CT IV https://app.laicode.io/app/problem/203?plan=3 两数组找中位数，如何思考 bisearch 解法
+  - p203 和 p410 排序/非排序数组找中位数，对时空间复杂度的影响
+- GS 太平洋大西洋问题的 2BFS 对时空间复杂度是否有效
+- QuickSort 用于 RainbowSort 时的格式，当颜色为 k 个时有没有不改原本快排格式的写法
