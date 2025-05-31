@@ -72,46 +72,46 @@ int maxDepth(TreeNode root) {
 ### Permutation 类问题（先后顺序不同是不同解）
 
 - 常用解题方法：每层思考一个位置
-- [Parentheses Problem1](/algorithmnnotes/parentheses-problem1.html)
+- [Parentheses Problem1](/algorithmnotes/parentheses-problem1.html)
   - 括号序列问题 1，只能用每层决定一个位置才能得到最优解
-- [All Permutations1](/algorithmnnotes/all-permutations1.html)
+- [All Permutations1](/algorithmnotes/all-permutations1.html)
   - 字符串全排列，字母不会重复
-- [Parentheses Problem2](/algorithmnnotes/parentheses-problem2.html)
+- [Parentheses Problem2](/algorithmnotes/parentheses-problem2.html)
   - 括号序列问题，三种括号但没有优先级，对右括号的放置有限制
-- [Parentheses Problem3](/algorithmnnotes/parentheses-problem3.html)
+- [Parentheses Problem3](/algorithmnotes/parentheses-problem3.html)
   - 括号序列问题，三种括号有优先级，对左括号的放置也有限制了
   - 和 Problem2 的差别只有左括号放置时的条件有所改变，一行差别
-- [All Permutations2](/algorithmnnotes/all-permutations2.html)
+- [All Permutations2](/algorithmnotes/all-permutations2.html)
   - 字符串全排列-允许字符重复，求长度为 s.length 的全排列
   - 使用 HashSet 去重，保证**要固定到同一位置的两个元素的 value 不会有重复**
   - 对于每个尝试换过来的位置，都用一个 set 确保换过来的点没有重复
-- [All Permutations3](/algorithmnnotes/all-permutations3.html)
+- [All Permutations3](/algorithmnotes/all-permutations3.html)
   - 字符串的全排列-允许字符重复，求任意长度的全排列
   - 即：元素数量可以不同
   - 当前层的意义：`[0,index)的内容`，需要加入解
-- [N Queen](/algorithmnnotes/n-queen.html)
+- [N Queen](/algorithmnotes/n-queen.html)
   - 经典 N Queens 问题
 
 ### Combination 类问题（仅先后顺序不同是相同解）
 
 - 常用解题方法：每次考虑一个元素的个数
   - 也可以使用每层考虑一个位置，但是**每个位置可以采用的元素必须是单调的（见 AllSubset1）**
-- [AllSubset1](/algorithmnnotes/allsubset1.html)
+- [AllSubset1](/algorithmnotes/allsubset1.html)
   - 找字符串的所有子集，不包含重复元素
   - Combination 问题,字符串的任意子集
-- [Combination-Sum](/algorithmnnotes/combination-sum.html)
+- [Combination-Sum](/algorithmnotes/combination-sum.html)
   - Combination 问题，完全背包，物品数量不限，问是否能正好装满，但要输出方案
-- [Combination Of Coins](/algorithmnnotes/combination-of-coins.html) （99Cents）
+- [Combination Of Coins](/algorithmnotes/combination-of-coins.html) （99Cents）
   - Combination 问题：完全背包
-- [All Subset2](/algorithmnnotes/all-subset2.html)
+- [All Subset2](/algorithmnotes/all-subset2.html)
   - 找字符串的所有长度为 k 的子集
   - 虽然结果长度固定，但是先后顺序在答案里不构成区分，决定这题是一个 combination 问题
-- [All Subset3](/algorithmnnotes/all-subset3.html)
+- [All Subset3](/algorithmnotes/all-subset3.html)
   - 找字符串的所有子集，包含重复元素
   - 需要先给字符串排序，才能开始烤肉
-- [All Subset4](/algorithmnnotes/all-subset4.html)
+- [All Subset4](/algorithmnotes/all-subset4.html)
   - 找字符串的所有长度为 k 的子集，包含重复元素
-- [FactorCombination](/algorithmnnotes/factorcombination.html)
+- [FactorCombination](/algorithmnotes/factorcombination.html)
   - 因数模拟，target 的修改从加减变成整除
 
 ## Tree
@@ -194,11 +194,11 @@ int maxDepth(TreeNode root) {
 
 #### 树上路径问题(Top-Down:信息自顶而下)
 
-[树上路径问题(TopDown)](/algorithmnnotes/topdown.html)
+[树上路径问题(TopDown)](/algorithmnotes/topdown.html)
 
 #### 树上路径问题（Bottom-up:信息自底而上）
 
-[树上路径问题(Bottomup)](/algorithmnnotes/bottomup.html)
+[树上路径问题(Bottomup)](/algorithmnotes/bottomup.html)
 
 ### LCA
 
@@ -299,6 +299,6 @@ TreeNode LCA(root, one, two): 给我一个root和两个要找的点，我返回L
 
 #### 例题
 
-[Lowest Common Ancestor VI](/algorithmnnotes/Lowest Common Ancestor VI.html)
+[Lowest Common Ancestor VI](/algorithmnotes/Lowest Common Ancestor VI.html)
 
 ## Graph

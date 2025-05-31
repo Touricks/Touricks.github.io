@@ -36,19 +36,19 @@ narrow: true
   - 任何节点的"前驱"都存在（除非链表空了），不必在代码里写 `if (head == node) …`。
   - 插入／删除操作可以统一写成："找到前驱 `prev`，然后 `prev.next = newNode; newNode.next = curr;`"，不用再考虑 `prev` 为 `null` 的分支。
 - 例题
-  - [Reorder Linked List](/algorithmnnotes/reorder-linked-list.html)
+  - [Reorder Linked List](/algorithmnotes/reorder-linked-list.html)
     - 易错点：在对两条链表交叉合并时，一定要 **先把下一个节点保存好**，再去修改指针，最后再推进 `cur`。警惕连续的 cur.next 赋值操作将 cur 原先对应的节点信息抹除
-  - [Partition Linked List](/algorithmnnotes/partition-linked-list.html)
+  - [Partition Linked List](/algorithmnotes/partition-linked-list.html)
     - 易错点：在对多条链表进行拼接时，警惕最后一段链表尾部的节点一定要添加额外设置:next = null. 如果把原来节点的 `next` 指针都保留了下来，会导致在把两条链拼接回去的时候形成了环
-  - [QuickSort LinkedList](/algorithmnnotes/quicksort-linkedlist.html)
+  - [QuickSort LinkedList](/algorithmnotes/quicksort-linkedlist.html)
     - 将快速排序的两个区间划分成两个 LinkedList，然后以两个 LinkedList 作为参数调用自己
 
 ## Linkedlist traversal 写法
 
 - Iterative 写法
 - 例题：
-  - [Reverse Linked List](/algorithmnnotes/reverse-linked-list.html)
-  - [Reverse a linkedlist by pair](/algorithmnnotes/reverse-a-linkedlist-by-pair.html)
+  - [Reverse Linked List](/algorithmnotes/reverse-linked-list.html)
+  - [Reverse a linkedlist by pair](/algorithmnotes/reverse-a-linkedlist-by-pair.html)
 
 ## "前一个"，"后一个"节点的控制方法
 
@@ -87,16 +87,16 @@ while (curr != null && curr.next != null && curr.next.next != null) {
 - 本质上还是快排，对于 color 较少的情况，可以做到 TC O(N) SC O(1) 解决
 - 将快排的 pivot 换为`color[mid]`，然后在划分数组的同时划分`color[mid]`
 - 优化方法（二路划分->三路划分）可以将很多元素相等导致的快排退化情况规避掉
-  [Rainbow Sort](/algorithmnnotes/rainbow-sort.html)
+  [Rainbow Sort](/algorithmnotes/rainbow-sort.html)
 
 ## Spiral Order Matrix 环形数组
 
-[Spiral-Order](/algorithmnnotes/spiral-order.html)
+[Spiral-Order](/algorithmnotes/spiral-order.html)
 
 # Stack
 
 - Sorted Array with Three Stack (要求 TC O(NlogN) )
-  [SortedWithStacks](/algorithmnnotes/sortedwithstacks.html)
+  [SortedWithStacks](/algorithmnotes/sortedwithstacks.html)
 
 # Tree
 
@@ -121,38 +121,38 @@ while (curr != null && curr.next != null && curr.next.next != null) {
     **核心思想**：递归的每一步都在问："以这个节点为根的子树，是否具有某种性质？" 或者 "这个节点的某种属性（比如高度、深度、节点数）是什么？"
 
 - 例题
-  [IsSymmertricTree](/algorithmnnotes/issymmertrictree.html)
+  [IsSymmertricTree](/algorithmnotes/issymmertrictree.html)
 - 判断一棵树是否对称
-  [TweakedIdenticalTrees](/algorithmnnotes/tweakedidenticaltrees.html)
+  [TweakedIdenticalTrees](/algorithmnotes/tweakedidenticaltrees.html)
 - 判断在允许交换左右节点的前提下，两棵树结构是否相等
-  [isBalancedTree](/algorithmnnotes/isbalancedtree.html)
+  [isBalancedTree](/algorithmnotes/isbalancedtree.html)
 - 判断一棵树是否平衡
 
 ## BinaryTree 遍历相关
 
 ### BST 节点的 Insert 和 Delete
 
-[BSTInsert](/algorithmnnotes/bstinsert.html)
-[BSTdelete](/algorithmnnotes/bstdelete.html)
+[BSTInsert](/algorithmnotes/bstinsert.html)
+[BSTdelete](/algorithmnotes/bstdelete.html)
 
 ### BinaryTree 的遍历(非递归写法)
 
 - 牢记 cornercase 的处理 - null
 - 在 inorder 和 postorder 中，我们需要保存当前访问的节点将其压入栈中
 - 由于"当前访问的节点"不是"当前需要的节点"，我们只能将其压入栈中，而不能直接 pop()
-  [Preorder(Iter)](/algorithmnnotes/preorder-iter.html)
-  [Inorder(Iter)](/algorithmnnotes/inorder-iter.html)
+  [Preorder(Iter)](/algorithmnotes/preorder-iter.html)
+  [Inorder(Iter)](/algorithmnotes/inorder-iter.html)
 
 ### Tree Serialization Problem
 
 - 按 preorder 把树拍扁
-  - [FlattenBinaryTree](/algorithmnnotes/flattenbinarytree.html)
+  - [FlattenBinaryTree](/algorithmnotes/flattenbinarytree.html)
   - Recursion 写法需要注意：任何一个需要维护 global 的结构，无论是不是 primitive type，都需要使用`Object[]`来存，否则 value-reference 的特性会使得递归返回后 reference 丢失
 - 中序遍历+任一遍历 恢复二叉树结构
   - 核心：为 inorder 设计`map<Node,Integer>`来比较任意两节点的子树关系
   - PreOrder
-    - [ReconstructBTwithPreorder-Inorder](/algorithmnnotes/reconstructbtwithpreorder-inorder.html)
+    - [ReconstructBTwithPreorder-Inorder](/algorithmnotes/reconstructbtwithpreorder-inorder.html)
   - PostOrder
-    - [ReconstructBTwithPostorder](/algorithmnnotes/reconstructbtwithpostorder.html)
+    - [ReconstructBTwithPostorder](/algorithmnotes/reconstructbtwithpostorder.html)
   - LevelOrder
-    - [Reconstruct Binary Tree With Level Order](/algorithmnnotes/reconstruct-binary-tree-with-level-order.html)
+    - [Reconstruct Binary Tree With Level Order](/algorithmnotes/reconstruct-binary-tree-with-level-order.html)
