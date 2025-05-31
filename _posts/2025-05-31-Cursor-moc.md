@@ -6,4 +6,4 @@ tags:
 narrow: true
 ---
 
-[Cursor 使用指南](/cursordocs/moc-cursor-user-guide.html)
+[Cursor UserGuide](/cursordocs/moc-cursor-user-guide.html)
