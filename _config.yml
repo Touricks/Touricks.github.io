@@ -18,7 +18,7 @@ avatar: /theme/img/portrait.JPG # Path to an avatar image
 baseurl: ""
 
 # Add a directory to hold misc pages, just to keep the root directory clean.
-include: ["_pages", "_blog_cursor"]
+include: ["_pages"]
 
 # Wire in the SASS files in the theme directory.
 sass:
@@ -55,6 +55,12 @@ defaults:
     values:
       show_profile: true
       layout: defaults/list
+  - scope:
+      path: "_blog_cursor"
+      type: "blog_cursor" # Optional: specify type for clarity
+    values:
+      show_profile: true
+      layout: defaults/post
 
 # Collections
 collections:
