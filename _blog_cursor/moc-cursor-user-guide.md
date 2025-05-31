@@ -14,24 +14,24 @@ narrow: true
 
 ## 常用文件的作用一览
 
-[常用文件作用一览](/cursor-docs/Common-File-Functions-Overview.html)
+[常用文件作用一览](/cursor-docs/common-file-functions-overview.html)
 
 ## 目录/文件放置建议
 
-[目录放置建议](/cursor-docs/Directory-Structure-Suggestions.html)
+[目录放置建议](/cursor-docs/directory-structure-suggestions.html)
 
 ## 每个文件的示范模板
 
-[示范模板](/cursor-docs/Demo-Template.html)
+[示范模板](/cursor-docs/demo-template.html)
 
 ## Rule
 
-[CursorRule](/cursor-docs/CursorRule.html)
+[CursorRule](/cursor-docs/cursorrule.html)
 
 ## 设定 Cursor 对文件的读写权限
 
-[设定 Cursor 对文件的读写权限](/cursor-docs/Set-Cursor-File-Permissions.html)
+[设定 Cursor 对文件的读写权限](/cursor-docs/set-cursor-file-permissions.html)
 
 ## MCP 相关
 
-[CursorMCP](/cursor-docs/CursorMCP.html)
+[CursorMCP](/cursor-docs/cursormcp.html)
