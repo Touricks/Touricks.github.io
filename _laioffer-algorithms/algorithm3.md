@@ -1,5 +1,5 @@
 ﻿---
 layout: default
-title: AlgorithmMOC
+title: alg2
 narrow: true
 ---
