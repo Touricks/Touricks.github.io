@@ -1,0 +1,2 @@
+1. layout:defaults/post而不是defaults的作用
+2. include中是否除了包含pages还要包含blogCursor
