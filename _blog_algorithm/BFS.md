@@ -21,26 +21,26 @@ Step6：Deduplication 策略是什么？在入队前置 visited=true 是否可�
 
 - 核心：记录当前层的节点个数
 - 如果当前节点的信息来源于"同一个深度的子树"，则我们必须使用双参数对左右子树同时处理，换句话说，如果不想极大提高空间复杂度，就不要尝试从左右子树的返回值中收集信息
-  - [Cousin in Binary Tree](/algorithmn-notes/cousin-in-binary-tree.html)
+  - [Cousin in Binary Tree](/algorithmnotes/cousin-in-binary-tree.html)
 - 常见题型：zig-zag
   - 使用 Deque，可以快速对字符串/列表的首尾进行 O(1)的增删
-  - [Print Tree in zig-zag ways](/algorithmn-notes/print-tree-in-zig-zag-ways.html)
+  - [Print Tree in zig-zag ways](/algorithmnotes/print-tree-in-zig-zag-ways.html)
 - 使用 Inorder 和 LevelOrder 进行树的还原
-  - [Reconstruct Binary Tree With Level Order](/algorithmn-notes/reconstruct-binary-tree-with-level-order.html)
+  - [Reconstruct Binary Tree With Level Order](/algorithmnotes/reconstruct-binary-tree-with-level-order.html)
 
 ## 图相关
 
 - 二分图：要把一个图里面的每个点分且之分成两个组，使得同组之间的点一定不互相连接，不同组之间的点可以互相连接
   - 二分图不需要联通
-- 二分图染色问题 - [BipartiteGraph](/algorithmn-notes/bipartitegraph.html)
+- 二分图染色问题 - [BipartiteGraph](/algorithnotes/bipartitegraph.html)
 - 七巧板问题
   - 将图信息压缩到固定位数的数字 -> 字符串中
   - 可转移状态数取决于 0 的位置
-  - [SevenPuzzle](/algorithmn-notes/sevenpuzzle.html)
+  - [SevenPuzzle](/algorithmnotes/sevenpuzzle.html)
 - Word Ladder
   - 将图信息压缩到字符串中
   - 可转移状态数取决于词典字符串与当前状态的关系
-  - [WordLadder](/algorithmn-notes/wordladder.html)
+  - [WordLadder](/algorithmnotes/wordladder.html)
 
 ### 拓扑排序
 
@@ -50,9 +50,9 @@ Step6：Deduplication 策略是什么？在入队前置 visited=true 是否可�
   - 拓扑排序实现：Queue
   - 结果记录：List/StringBuilder
 - 例题
-  - [CourseSchedule](/algorithmn-notes/courseschedule.html)
+  - [CourseSchedule](/algorithmnotes/courseschedule.html)
     - 使用 Integer 表示 Node
-  - [AlienDictionary](/algorithmn-notes/aliendictionary.html)
+  - [AlienDictionary](/algorithmnotes/aliendictionary.html)
     - 使用 Character 表示 Node
 
 ### 启发式搜索：双向 BFS+按层遍历
@@ -97,7 +97,7 @@ Step6：Deduplication 策略是什么？在入队前置 visited=true 是否可�
 
 - 例题：
   - Word Ladder；题目相同，但使用双向 BFS 实现
-  - [WordLadder2](/algorithmn-notes/wordladder2.html)
+  - [WordLadder2](/algorithmnotes/wordladder2.html)
 
 ### 打印路径：单向 BFS+DFS Backtracking
 
@@ -139,7 +139,7 @@ if (dist.get(next) == distToCur+1){
     }
 ```
 
-[WordLadder3](/algorithmn-notes/wordladder3.html)
+[WordLadder3](/algorithnotes/wordladder3.html)
 
 ## 最短路相关
 
@@ -163,5 +163,5 @@ Dijkstra
 - 松弛成功 → 允许重新压回队列
 - 借助 `relaxCount`（入队次数）即可在 `≥ N` 次时判定负环。
 
-[无权图](/algorithmn-notes/unweighted-graph.html)
-[Dijkstra](/algorithmn-notes/dijkstra.html)
+[无权图](/algorithnotes/unweighted-graph.html)
+[Dijkstra](/algorithnotes/dijkstra.html)

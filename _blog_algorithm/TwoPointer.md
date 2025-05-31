@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: TwoPointer
 narrow: true
@@ -23,19 +23,19 @@ Sliding Window：Alias - 攘外必先安内
   - `left` 标记左边"已放好"区的右边界；
   - `right` 标记右边"已放好"区的左边界；
   - 中间区 `[left .. right]` 是待处理的元素
-  - [QuickSort LinkedList](/algorithmn-notes/quicksort-linkedlist.html)
-  - [Rainbow Sort](/algorithmn-notes/rainbow-sort.html)
+  - [QuickSort LinkedList](/algorithmnnotes/quicksort-linkedlist.html)
+  - [Rainbow Sort](/algorithmnnotes/rainbow-sort.html)
 
 ## Stack+two-pointer
 
 - Basic Calculator
   - 包含乘除号
-  - [BasicCalculator](/algorithmn-notes/basiccalculator.html)
+  - [BasicCalculator](/algorithmnnotes/basiccalculator.html)
 - Advanced Calculator
   - 包含乘除号和括号
-  - [AdvancedCalculator](/algorithmn-notes/advancedcalculator.html)
+  - [AdvancedCalculator](/algorithmnnotes/advancedcalculator.html)
 - Array Duduplication IV
-  - [RemoveAllAdjcentDuplicates](/algorithmn-notes/removealladjcentduplicates.html)
+  - [RemoveAllAdjcentDuplicates](/algorithmnnotes/removealladjcentduplicates.html)
   - 去留问题：但这一题我们要保留长度小于 k 的子串
   - 考虑到 k 的范围，我们不能用 O(k)的时间判断一个字符该不该回退
   - 必须使用记忆化搜索思想（在 stack 里加一个计数器）
@@ -51,19 +51,19 @@ slow-fast：slow 左边是处理好的元素（不含 slow），当前指针 fas
 
 - 去除所有的重复元素
 
-  - [Array Deduplication III](/algorithmn-notes/array-deduplication-iii.html)
+  - [Array Deduplication III](/algorithmnnotes/array-deduplication-iii.html)
   - 去留问题：关注的点是==怎么个留法==
   - 在这题中：连续的重复元素 - 一个都不留
   - slow-fast 代替 stack 工作
 
-- [Move-0s-to-end](/algorithmn-notes/move-0s-to-end.html)
+- [Move-0s-to-end](/algorithmnnotes/move-0s-to-end.html)
 - 需要把一个特征对应的元素挪到一边，同时保持剩余元素的相对顺序。
 
 - 字符串翻转问题
   - 有额外空格版（truncate all heading/trailing/duplicate space characters）
   - 当字符串长度可能发生变化时，使用 StringBuilder 比较方便
   - 如果两端都可能接字符，使用`Deque<Character>`,最后再 O（N）构建字符串
-  - [ReverseWordsInASentenceII](/algorithmn-notes/reversewordsinasentenceii.html)
+  - [ReverseWordsInASentenceII](/algorithmnnotes/reversewordsinasentenceii.html)
 
 ## Linked List
 
@@ -80,13 +80,13 @@ Slow–Fast（快慢指针）是一种"**在同一遍历里，以不同步长同
   - `[0,slow)` useless
   - `(fast,end]` unexplored
 - 对 fast 的处理步骤： - 移动 slow - 得到一个以 fast 为右边界的解集: `[slow2,fast]` - 更新答案
-  [Longest Substring Without Repeating Characters](/algorithmn-notes/longest-substring-without-repeating-characters.html)
+  [Longest Substring Without Repeating Characters](/algorithmnnotes/longest-substring-without-repeating-characters.html)
 - Sliding Window + Hashset
-  [All anagram](/algorithmn-notes/all-anagram.html)
+  [All anagram](/algorithmnnotes/all-anagram.html)
 - Sliding Window + HashMap
-  [Longest subarray contains only 1s](/algorithmn-notes/longest-subarray-contains-only-1s.html)
+  [Longest subarray contains only 1s](/algorithmnnotes/longest-subarray-contains-only-1s.html)
 - Sliding Window + HashMap, 变种
-  [Clostest Number in BST](/algorithmn-notes/clostest-number-in-bst.html)
+  [Clostest Number in BST](/algorithmnnotes/clostest-number-in-bst.html)
 - Sliding Window + BST 的 inorder 性质
 
 ## MonoStack
@@ -139,25 +139,25 @@ Slow–Fast（快慢指针）是一种"**在同一遍历里，以不同步长同
 ### Histogram Question
 
 - 直方图接水问题
-  - [MaxWaterTrapped](/algorithmn-notes/maxwatertrapped.html)
+  - [MaxWaterTrapped](/algorithmnnotes/maxwatertrapped.html)
   - 一道 1D monostack，但有两个更好的方法
   - 注意：单次弹栈计算的是一个特定高度层的水量，而不是某个特定柱子作为"最低点"的完整凹槽的总水量。整个凹槽的总水量是通过这些水层不断叠加计算得到的
 - 3D 直方图接水问题
-  - [MaxWaterTrapped3D](/algorithmn-notes/maxwatertrapped3d.html)
+  - [MaxWaterTrapped3D](/algorithmnnotes/maxwatertrapped3d.html)
 - 直方图最大矩形问题
-  - [LargestRectangleInHistogram](/algorithmn-notes/largestrectangleinhistogram.html)
+  - [LargestRectangleInHistogram](/algorithmnnotes/largestrectangleinhistogram.html)
 - 最大全为 1 矩形大小问题
-  - [LargestRectangleOf1s](/algorithmn-notes/largestrectangleof1s.html)
+  - [LargestRectangleOf1s](/algorithmnnotes/largestrectangleof1s.html)
 
 ### 其他单调栈问题
 
 - 最近更大的数字问题
-  - [NextGreaterNumberI](/algorithmn-notes/nextgreaternumberi.html)
+  - [NextGreaterNumberI](/algorithmnnotes/nextgreaternumberi.html)
 - 最长上升子序列的 O(nlogn)写法
-  - [LIS](/algorithmn-notes/lis.html)
+  - [LIS](/algorithmnnotes/lis.html)
 
 ### 滑动窗口最大值问题
 
-- [MaximumValueOfSizeKSlidingWindow](/algorithmn-notes/maximumvalueofsizekslidingwindow.html)
+- [MaximumValueOfSizeKSlidingWindow](/algorithmnnotes/maximumvalueofsizekslidingwindow.html)
   - 询问窗口大小为 k 时每个窗口的最大值
   - 单调栈/前缀后缀数组+分块
